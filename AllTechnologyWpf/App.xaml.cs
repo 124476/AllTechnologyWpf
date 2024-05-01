@@ -15,5 +15,6 @@ namespace AllTechnologyWpf
     public partial class App : Application
     {
         public static AllTechnologyWpfDatabaseEntities DB = new AllTechnologyWpfDatabaseEntities();
+        public static Models.Color color;
     }
 }

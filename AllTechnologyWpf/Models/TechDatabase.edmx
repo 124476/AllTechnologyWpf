@@ -5,6 +5,13 @@
     <!-- SSDL content -->
     <edmx:StorageModels>
     <Schema Namespace="Хранилище AllTechnologyWpfDatabaseModel" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="Color">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Hex" Type="nvarchar" MaxLength="7" />
+        </EntityType>
         <EntityType Name="sysdiagrams">
           <Key>
             <PropertyRef Name="diagram_id" />
@@ -24,6 +31,7 @@
           <Property Name="Photo" Type="image" />
         </EntityType>
         <EntityContainer Name="Хранилище AllTechnologyWpfDatabaseModelContainer">
+          <EntitySet Name="Color" EntityType="Self.Color" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="User" EntityType="Self.User" Schema="dbo" store:Type="Tables" />
         </EntityContainer>
@@ -32,9 +40,17 @@
     <edmx:ConceptualModels>
       <Schema Namespace="AllTechnologyWpfDatabaseModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
         <EntityContainer Name="AllTechnologyWpfDatabaseEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Color" EntityType="AllTechnologyWpfDatabaseModel.Color" />
           <EntitySet Name="sysdiagrams" EntityType="AllTechnologyWpfDatabaseModel.sysdiagrams" />
           <EntitySet Name="User" EntityType="AllTechnologyWpfDatabaseModel.User" />
         </EntityContainer>
+        <EntityType Name="Color">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Hex" Type="String" MaxLength="7" FixedLength="false" Unicode="true" />
+        </EntityType>
         <EntityType Name="sysdiagrams">
           <Key>
             <PropertyRef Name="diagram_id" />
@@ -53,12 +69,20 @@
           <Property Name="Name" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
           <Property Name="Photo" Type="Binary" MaxLength="Max" FixedLength="false" />
         </EntityType>
-      </Schema>
+        </Schema>
     </edmx:ConceptualModels>
     <!-- C-S mapping content -->
     <edmx:Mappings>
       <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
         <EntityContainerMapping StorageEntityContainer="Хранилище AllTechnologyWpfDatabaseModelContainer" CdmEntityContainer="AllTechnologyWpfDatabaseEntities">
+          <EntitySetMapping Name="Color">
+            <EntityTypeMapping TypeName="AllTechnologyWpfDatabaseModel.Color">
+              <MappingFragment StoreEntitySet="Color">
+                <ScalarProperty Name="Hex" ColumnName="Hex" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
           <EntitySetMapping Name="sysdiagrams">
             <EntityTypeMapping TypeName="AllTechnologyWpfDatabaseModel.sysdiagrams">
               <MappingFragment StoreEntitySet="sysdiagrams">

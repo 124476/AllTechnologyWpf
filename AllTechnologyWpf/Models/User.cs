@@ -11,13 +11,11 @@ namespace AllTechnologyWpf.Models
 {
     using System;
     using System.Collections.Generic;
-    using System.Xml.Serialization;
-
+    
     public partial class User
     {
         public int Id { get; set; }
         public string Name { get; set; }
-        [XmlIgnore]
         public byte[] Photo { get; set; }
     }
 }

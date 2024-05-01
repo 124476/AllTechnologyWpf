@@ -1,9 +1,17 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Schema Namespace="AllTechnologyWpfDatabaseModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
   <EntityContainer Name="AllTechnologyWpfDatabaseEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Color" EntityType="AllTechnologyWpfDatabaseModel.Color" />
     <EntitySet Name="sysdiagrams" EntityType="AllTechnologyWpfDatabaseModel.sysdiagrams" />
     <EntitySet Name="User" EntityType="AllTechnologyWpfDatabaseModel.User" />
   </EntityContainer>
+  <EntityType Name="Color">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Hex" Type="String" MaxLength="7" FixedLength="false" Unicode="true" />
+  </EntityType>
   <EntityType Name="sysdiagrams">
     <Key>
       <PropertyRef Name="diagram_id" />

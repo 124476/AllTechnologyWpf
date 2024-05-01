@@ -1,4 +1,5 @@
 ﻿using AllTechnologyWpf.Models;
+using AllTechnologyWpf.Windows;
 using Microsoft.Win32;
 using Newtonsoft.Json;
 using System;
@@ -18,6 +19,7 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 using System.Xml;
 using System.Xml.Serialization;
+using Color = System.Windows.Media.Color;
 
 namespace AllTechnologyWpf.Pages
 {
@@ -166,6 +168,29 @@ namespace AllTechnologyWpf.Pages
         private void Hyperlink_RequestNavigate(object sender, RequestNavigateEventArgs e)
         {
             System.Diagnostics.Process.Start(e.Uri.ToString());
+        }
+
+        private void GotNewColor_Click(object sender, RoutedEventArgs e)
+        {
+            var dialog = new OknoColors();
+            if (dialog.ShowDialog().GetValueOrDefault())
+            {
+                PoiskHex.Text = App.color.Hex;
+                SearchColor.Background = new SolidColorBrush((Color)ColorConverter.ConvertFromString(App.color.Hex));
+            }
+        }
+
+        private void PoiskHex_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+            try
+            {
+                SearchColor.Background = new SolidColorBrush((Color)ColorConverter.ConvertFromString(PoiskHex.Text));
+            }
+            catch
+            {
+
+            }
         }
     }
 }

@@ -1,6 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
   <EntityContainerMapping StorageEntityContainer="Хранилище AllTechnologyWpfDatabaseModelContainer" CdmEntityContainer="AllTechnologyWpfDatabaseEntities">
+    <EntitySetMapping Name="Color">
+      <EntityTypeMapping TypeName="AllTechnologyWpfDatabaseModel.Color">
+        <MappingFragment StoreEntitySet="Color">
+          <ScalarProperty Name="Hex" ColumnName="Hex" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
     <EntitySetMapping Name="sysdiagrams">
       <EntityTypeMapping TypeName="AllTechnologyWpfDatabaseModel.sysdiagrams">
         <MappingFragment StoreEntitySet="sysdiagrams">

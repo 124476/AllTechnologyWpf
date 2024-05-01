@@ -25,6 +25,7 @@ namespace AllTechnologyWpf.Models
             throw new UnintentionalCodeFirstException();
         }
     
+        public virtual DbSet<Color> Color { get; set; }
         public virtual DbSet<sysdiagrams> sysdiagrams { get; set; }
         public virtual DbSet<User> User { get; set; }
     }

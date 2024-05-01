@@ -60,6 +60,12 @@
                 <Button x:Name="UpBtn" Click="UpBtn_Click"  Content=">" FontSize="17" Width="50"></Button>
             </StackPanel>
         </StackPanel>
+
+        <StackPanel Grid.Row="1" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" Width="200">
+            <TextBlock x:Name="SearchColor" FontSize="17" Height="20"></TextBlock>
+            <TextBox x:Name="PoiskHex" FontSize="17" TextChanged="PoiskHex_TextChanged"></TextBox>
+            <Button x:Name="GotNewColor" FontSize="17" Content="Палитра" Click="GotNewColor_Click" Background="White"></Button>
+        </StackPanel>
         <StackPanel Grid.Column="2" Grid.Row="2" VerticalAlignment="Center" HorizontalAlignment="Center">
             <Button x:Name="GotPhotoGrid" Click="GotPhotoGrid_Click" Content="Сфоткать grid" FontSize="17" Width="200" Height="30">
                 <Button.Resources>
