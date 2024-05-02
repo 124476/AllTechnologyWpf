@@ -21,7 +21,7 @@ git init <br />
 git add README.md<br />
 git commit -m "first commit" <br />
 git branch -M main <br />
-git remote add origin https://github.com/124476/testdel.git <br />
+git remote add origin https://github.com/124476/AllTechnologyWpf <br />
 git push -u origin main <br />
 
 ### Push в ветку
