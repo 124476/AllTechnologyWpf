@@ -31,3 +31,8 @@ git add .
 git commit -m "First Version"
 git remote add Fails https://github.com/124476/AllTechnologyWpf
 git push -u Fails Fails
+
+### Обновление
+git add .
+git commit -m "First Version"
+git push
