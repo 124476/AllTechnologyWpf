@@ -35,4 +35,8 @@ git push -u Fails Fails <br />
 ### Обновление
 git add . <br />
 git commit -m "Two Version" <br />
+<<<<<<< HEAD
 git push
+=======
+git push
+>>>>>>> 40edc668b06bf853b97271725d22a375e751ddde
