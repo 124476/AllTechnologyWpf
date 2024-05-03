@@ -1,4 +1,5 @@
 ﻿using AllTechnologyWpf.Models;
+using AllTechnologyWpf.Properties;
 using AllTechnologyWpf.Windows;
 using Microsoft.Win32;
 using Newtonsoft.Json;
@@ -6,7 +7,9 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Reflection.Emit;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
@@ -17,6 +20,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.Windows.Threading;
 using System.Xml;
 using System.Xml.Serialization;
 using Color = System.Windows.Media.Color;
@@ -30,11 +34,21 @@ namespace AllTechnologyWpf.Pages
     {
         TextBlock textBlockLocal;
         int contextRot;
+        int startingTimer;
         public PageMain()
         {
             InitializeComponent();
             DownBtn.Content = "<";
             contextRot = 0;
+            startingTimer = 0;
+            if (Settings.Default.savedText != null)
+            {
+                SavedText.Text = Settings.Default.savedText;
+            }
+            else
+            {
+                SavedText.Text = "";
+            }
         }
 
         private void GotPhotoGrid_Click(object sender, RoutedEventArgs e)
@@ -191,6 +205,26 @@ namespace AllTechnologyWpf.Pages
         private void Hyperlink_Click(object sender, RoutedEventArgs e)
         {
             System.Diagnostics.Process.Start("https://github.com/124476/AllTechnologyWpf");
+        }
+
+        private void StartTimer_Click(object sender, RoutedEventArgs e)
+        {
+            DispatcherTimer timer = new DispatcherTimer();
+            timer.Tick += Timer_Tick;
+            timer.Interval = TimeSpan.FromSeconds(5);
+            timer.Start();
+        }
+
+        private void Timer_Tick(object sender, EventArgs e)
+        {
+            startingTimer += 1;
+            SetTimerText.Text = startingTimer.ToString();
+        }
+
+        private void Save_Click(object sender, RoutedEventArgs e)
+        {
+            Settings.Default.savedText = SavedText.Text;
+            Settings.Default.Save();
         }
     }
 }

@@ -67,34 +67,44 @@
             <Button x:Name="GotNewColor" FontSize="17" Content="Палитра" Click="GotNewColor_Click" Background="White"></Button>
         </StackPanel>
         <StackPanel Grid.Column="2" Grid.Row="2" VerticalAlignment="Center" HorizontalAlignment="Center">
-            <Button x:Name="GotPhotoGrid" Click="GotPhotoGrid_Click" Content="Сфоткать grid" FontSize="17" Width="200" Height="30">
+            <Button x:Name="GotPhotoGrid" Click="GotPhotoGrid_Click" Content="Сфоткать grid" FontSize="17" Width="200" Height="30" Background="White">
                 <Button.Resources>
                     <Style TargetType="Border">
                         <Setter Property="CornerRadius" Value="20"></Setter>
                     </Style>
                 </Button.Resources>
             </Button>
-            <Button x:Name="GotNewPhoto" Content="Загрузить новые фото" FontSize="17" Width="200" Height="30" Click="GotNewPhoto_Click">
+            <Button x:Name="GotNewPhoto" Content="Загрузить новые фото" FontSize="17" Width="200" Height="30" Click="GotNewPhoto_Click" Background="White">
                 <Button.Resources>
                     <Style TargetType="Border">
                         <Setter Property="CornerRadius" Value="20"></Setter>
                     </Style>
                 </Button.Resources>
             </Button>
-            <Button x:Name="GotJsonBtn" Content="Скачать в json" FontSize="17" Width="200" Height="30" Click="GotJsonBtn_Click">
+            <Button x:Name="GotJsonBtn" Content="Скачать в json" FontSize="17" Width="200" Height="30" Click="GotJsonBtn_Click" Background="White">
                 <Button.Resources>
                     <Style TargetType="Border">
                         <Setter Property="CornerRadius" Value="20"></Setter>
                     </Style>
                 </Button.Resources>
             </Button>
-            <Button x:Name="GotXmlBtn" Content="Скачать в xml" FontSize="17" Width="200" Height="30" Click="GotXmlBtn_Click">
+            <Button x:Name="GotXmlBtn" Content="Скачать в xml" FontSize="17" Width="200" Height="30" Click="GotXmlBtn_Click" Background="White">
                 <Button.Resources>
                     <Style TargetType="Border">
                         <Setter Property="CornerRadius" Value="20"></Setter>
                     </Style>
                 </Button.Resources>
             </Button>
+        </StackPanel>
+        <StackPanel Grid.Column="0" Grid.Row="2" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <TextBlock Text="Таймер сработал:" FontSize="17"></TextBlock>
+            <TextBlock Name="SetTimerText" Text="-" FontSize="17" HorizontalAlignment="Center"></TextBlock>
+            <Button x:Name="StartTimer" FontSize="17" Content="Запустить таймер" Background="White" Click="StartTimer_Click"></Button>
+        </StackPanel>
+        <StackPanel Grid.Column="1" Grid.Row="2" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <TextBlock Text="Сохраненный текст:" FontSize="17"></TextBlock>
+            <TextBox Name="SavedText" FontSize="17"></TextBox>
+            <Button x:Name="Save" FontSize="17" Content="Сохранить" Background="White" Click="Save_Click"></Button>
         </StackPanel>
     </Grid>
 </Page>
