@@ -12,27 +12,27 @@
 7. Палитра
 8. Загрузка множества фото
 9. Ссылка в TextBlock
-10. Генерация
+10. Генерация (Рандом)
 11. DragAndDrop
 
-
 ## Команды git
-### Push в основную
-git init
-git add .
-git commit -m "First Version"
-git remote add https://github.com/124476/AllTechnologyWpf
-git push -u main
+### Push в основную ветку
+git init <br />
+git add README.md<br />
+git commit -m "first commit" <br />
+git branch -M main <br />
+git remote add origin https://github.com/124476/AllTechnologyWpf <br />
+git push -u origin main <br />
 
 ### Push в ветку
-git init
-git checkout -b Fails
-git add .
-git commit -m "First Version"
-git remote add Fails https://github.com/124476/AllTechnologyWpf
-git push -u Fails Fails
+git init <br />
+git checkout -b Fails <br />
+git add . <br />
+git commit -m "First Version" <br />
+git remote add Fails https://github.com/124476/AllTechnologyWpf <br />
+git push -u Fails Fails <br />
 
 ### Обновление
-git add .
-git commit -m "First Version"
+git add . <br />
+git commit -m "Two Version" <br />
 git push

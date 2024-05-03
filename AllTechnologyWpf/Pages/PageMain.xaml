@@ -50,7 +50,7 @@
             </TextBox>
             <TextBlock x:Name="RandomBtn" FontSize="17" MouseUp="RandomBtn_MouseUp"  Text="Сгенерировать"></TextBlock>
             <TextBlock FontSize="17">
-                <Hyperlink NavigateUri="https://github.com/124476/AllTechnologyWpf" RequestNavigate="Hyperlink_RequestNavigate">Ссылка</Hyperlink>
+                <Hyperlink Click="Hyperlink_Click">Ссылка</Hyperlink>
             </TextBlock>
         </StackPanel>
         <StackPanel Grid.Row="1" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center">

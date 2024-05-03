@@ -165,11 +165,6 @@ namespace AllTechnologyWpf.Pages
             Refresh();
         }
 
-        private void Hyperlink_RequestNavigate(object sender, RequestNavigateEventArgs e)
-        {
-            System.Diagnostics.Process.Start(e.Uri.ToString());
-        }
-
         private void GotNewColor_Click(object sender, RoutedEventArgs e)
         {
             var dialog = new OknoColors();
@@ -191,6 +186,11 @@ namespace AllTechnologyWpf.Pages
             {
 
             }
+        }
+
+        private void Hyperlink_Click(object sender, RoutedEventArgs e)
+        {
+            System.Diagnostics.Process.Start("https://github.com/124476/AllTechnologyWpf");
         }
     }
 }
