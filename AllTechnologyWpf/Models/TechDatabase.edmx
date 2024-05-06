@@ -12,6 +12,13 @@
           <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="Hex" Type="nvarchar" MaxLength="7" />
         </EntityType>
+        <EntityType Name="Grafik">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Num" Type="int" Nullable="false" />
+        </EntityType>
         <EntityType Name="sysdiagrams">
           <Key>
             <PropertyRef Name="diagram_id" />
@@ -32,6 +39,7 @@
         </EntityType>
         <EntityContainer Name="Хранилище AllTechnologyWpfDatabaseModelContainer">
           <EntitySet Name="Color" EntityType="Self.Color" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Grafik" EntityType="Self.Grafik" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="User" EntityType="Self.User" Schema="dbo" store:Type="Tables" />
         </EntityContainer>
@@ -41,6 +49,7 @@
       <Schema Namespace="AllTechnologyWpfDatabaseModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
         <EntityContainer Name="AllTechnologyWpfDatabaseEntities" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="Color" EntityType="AllTechnologyWpfDatabaseModel.Color" />
+          <EntitySet Name="Grafik" EntityType="AllTechnologyWpfDatabaseModel.Grafik" />
           <EntitySet Name="sysdiagrams" EntityType="AllTechnologyWpfDatabaseModel.sysdiagrams" />
           <EntitySet Name="User" EntityType="AllTechnologyWpfDatabaseModel.User" />
         </EntityContainer>
@@ -50,6 +59,13 @@
           </Key>
           <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="Hex" Type="String" MaxLength="7" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="Grafik">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Num" Type="Int32" Nullable="false" />
         </EntityType>
         <EntityType Name="sysdiagrams">
           <Key>
@@ -79,6 +95,14 @@
             <EntityTypeMapping TypeName="AllTechnologyWpfDatabaseModel.Color">
               <MappingFragment StoreEntitySet="Color">
                 <ScalarProperty Name="Hex" ColumnName="Hex" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Grafik">
+            <EntityTypeMapping TypeName="AllTechnologyWpfDatabaseModel.Grafik">
+              <MappingFragment StoreEntitySet="Grafik">
+                <ScalarProperty Name="Num" ColumnName="Num" />
                 <ScalarProperty Name="Id" ColumnName="Id" />
               </MappingFragment>
             </EntityTypeMapping>

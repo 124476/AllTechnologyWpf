@@ -20,10 +20,10 @@
             <RowDefinition></RowDefinition>
             <RowDefinition></RowDefinition>
         </Grid.RowDefinitions>
-        <ListView x:Name="ListUsers" Grid.RowSpan="2">
+        <ListView x:Name="ListUsers" Grid.RowSpan="2" ScrollViewer.VerticalScrollBarVisibility="Hidden" BorderThickness="0">
             <ListView.ItemsPanel>
                 <ItemsPanelTemplate>
-                    <WrapPanel Width="200"></WrapPanel>
+                    <WrapPanel Width="200" HorizontalAlignment="Center"></WrapPanel>
                 </ItemsPanelTemplate>
             </ListView.ItemsPanel>
             <ListView.ItemTemplate>

@@ -6,8 +6,9 @@
     <edmx:Diagrams>
       <Diagram DiagramId="aebbf4bc9ac6481cba943dba6cd34013" Name="Diagram1" ZoomLevel="61">
         <EntityTypeShape EntityType="AllTechnologyWpfDatabaseModel.Color" Width="1.5" PointX="0.75" PointY="0.75" />
-        <EntityTypeShape EntityType="AllTechnologyWpfDatabaseModel.sysdiagrams" Width="1.5" PointX="2.75" PointY="0.75" />
-        <EntityTypeShape EntityType="AllTechnologyWpfDatabaseModel.User" Width="1.5" PointX="0.75" PointY="3.75" />
+        <EntityTypeShape EntityType="AllTechnologyWpfDatabaseModel.Grafik" Width="1.5" PointX="2.75" PointY="0.75" />
+        <EntityTypeShape EntityType="AllTechnologyWpfDatabaseModel.sysdiagrams" Width="1.5" PointX="0.75" PointY="3.75" />
+        <EntityTypeShape EntityType="AllTechnologyWpfDatabaseModel.User" Width="1.5" PointX="2.75" PointY="3.75" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

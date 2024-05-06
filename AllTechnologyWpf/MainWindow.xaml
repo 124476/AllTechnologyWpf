@@ -11,6 +11,7 @@
             <RowDefinition Height="auto"></RowDefinition>
             <RowDefinition></RowDefinition>
         </Grid.RowDefinitions>
+        <Image Source="/Imports/Logo.png" Grid.Row="0" Height="30" Width="50" HorizontalAlignment="Left" Margin="20,10,10,10" RenderOptions.BitmapScalingMode="Fant"></Image>
         <Button x:Name="Back" Content="Назад" Margin="10,10,10,10" HorizontalAlignment="Right" Click="Back_Click" Width="200" FontSize="17"></Button>
         <Frame x:Name="MyFrame" NavigationUIVisibility="Hidden" ContentRendered="MyFrame_ContentRendered" Grid.Row="1"></Frame>
     </Grid>

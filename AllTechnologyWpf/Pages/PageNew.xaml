@@ -32,5 +32,8 @@
             <TextBlock Text="Version:" FontSize="17"></TextBlock>
             <TextBlock x:Name="VersionPkText" FontSize="17"></TextBlock>
         </StackPanel>
+        <StackPanel Grid.Column="1" Grid.Row="0">
+            <Canvas x:Name="canvasDrive"></Canvas>
+        </StackPanel>
     </Grid>
 </Page>

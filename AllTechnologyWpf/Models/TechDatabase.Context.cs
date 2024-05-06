@@ -26,6 +26,7 @@ namespace AllTechnologyWpf.Models
         }
     
         public virtual DbSet<Color> Color { get; set; }
+        public virtual DbSet<Grafik> Grafik { get; set; }
         public virtual DbSet<sysdiagrams> sysdiagrams { get; set; }
         public virtual DbSet<User> User { get; set; }
     }

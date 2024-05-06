@@ -2,6 +2,7 @@
 <Schema Namespace="AllTechnologyWpfDatabaseModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
   <EntityContainer Name="AllTechnologyWpfDatabaseEntities" annotation:LazyLoadingEnabled="true">
     <EntitySet Name="Color" EntityType="AllTechnologyWpfDatabaseModel.Color" />
+    <EntitySet Name="Grafik" EntityType="AllTechnologyWpfDatabaseModel.Grafik" />
     <EntitySet Name="sysdiagrams" EntityType="AllTechnologyWpfDatabaseModel.sysdiagrams" />
     <EntitySet Name="User" EntityType="AllTechnologyWpfDatabaseModel.User" />
   </EntityContainer>
@@ -11,6 +12,13 @@
     </Key>
     <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
     <Property Name="Hex" Type="String" MaxLength="7" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="Grafik">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Num" Type="Int32" Nullable="false" />
   </EntityType>
   <EntityType Name="sysdiagrams">
     <Key>

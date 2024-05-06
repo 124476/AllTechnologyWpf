@@ -6,6 +6,7 @@ using System.Collections.Generic;
 using System.Drawing;
 using System.IO;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
@@ -14,9 +15,11 @@ using System.Windows.Data;
 using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
+using System.Windows.Media.Animation;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using Brushes = System.Windows.Media.Brushes;
 
 namespace AllTechnologyWpf.Pages
 {
@@ -28,8 +31,29 @@ namespace AllTechnologyWpf.Pages
         public PageNew()
         {
             InitializeComponent();
+            var version = Assembly.GetEntryAssembly().GetName().Version;
 
+            VersionPkText.Text = version.Major.ToString() + "." + version.Minor.ToString() + "." + version.Build.ToString();
+            Refresh();
+        }
 
+        private void Refresh()
+        {
+            int x1 = 0;
+            int y1 = 0;
+
+            foreach(var item in App.DB.Grafik)
+            {  
+                Line line = new Line();
+                line.X1 = x1;
+                line.X2 = x1 + 5;
+                line.Y1 = -y1 + 100;
+                line.Y2 = -item.Num + 100;
+                line.Stroke = Brushes.Red;
+                canvasDrive.Children.Add(line);
+                x1 += 5;
+                y1 = item.Num;
+            }
         }
 
         private void SaveQr_Click(object sender, RoutedEventArgs e)
