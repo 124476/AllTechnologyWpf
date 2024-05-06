@@ -52,3 +52,7 @@ C:\Users\Stipo6\source\repos\AllTechnologyWpf\AllTechnologyWpf\obj\Debug\AllTech
 C:\Users\Stipo6\source\repos\AllTechnologyWpf\AllTechnologyWpf\obj\Debug\AllTechnologyWpf.pdb
 C:\Users\Stipo6\source\repos\AllTechnologyWpf\AllTechnologyWpf\obj\Debug\Windows\OknoColors.g.cs
 C:\Users\Stipo6\source\repos\AllTechnologyWpf\AllTechnologyWpf\obj\Debug\Windows\OknoColors.baml
+C:\Users\Stipo6\source\repos\AllTechnologyWpf\AllTechnologyWpf\obj\Debug\Pages\PageNew.g.cs
+C:\Users\Stipo6\source\repos\AllTechnologyWpf\AllTechnologyWpf\obj\Debug\Pages\PageNew.baml
+C:\Users\Stipo6\source\repos\AllTechnologyWpf\AllTechnologyWpf\bin\Debug\MessagingToolkit.QRCode.dll
+C:\Users\Stipo6\source\repos\AllTechnologyWpf\AllTechnologyWpf\bin\Debug\ru\EntityFramework.SqlServer.resources.dll

@@ -7,6 +7,7 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Media;
 using System.Reflection.Emit;
 using System.Text;
 using System.Threading;
@@ -35,6 +36,7 @@ namespace AllTechnologyWpf.Pages
         TextBlock textBlockLocal;
         int contextRot;
         int startingTimer;
+        bool IsGray;
         public PageMain()
         {
             InitializeComponent();
@@ -56,13 +58,13 @@ namespace AllTechnologyWpf.Pages
             var dialog = new SaveFileDialog() { Filter = "*.jpeg; | *.jpeg;" };
             if (dialog.ShowDialog().GetValueOrDefault())
             {
-                var renderBitmap = new RenderTargetBitmap((int)GridCopy.ActualWidth, (int)GridCopy.ActualHeight, 96, 96, PixelFormats.Pbgra32);
-                renderBitmap.Render(GridCopy);
-                var jpegEncoder = new JpegBitmapEncoder();
-                jpegEncoder.Frames.Add(BitmapFrame.Create(renderBitmap));
-                using (var fileStream = new FileStream(dialog.FileName, FileMode.Create))
+                var render = new RenderTargetBitmap((int)GridCopy.ActualWidth, (int)GridCopy.ActualHeight, 96, 96, PixelFormats.Pbgra32);
+                render.Render(GridCopy);
+                var encoder = new JpegBitmapEncoder();
+                encoder.Frames.Add(BitmapFrame.Create(render));
+                using (var file = new FileStream(dialog.FileName, FileMode.Create))
                 {
-                    jpegEncoder.Save(fileStream);
+                    encoder.Save(file);
                 }
             }
         }
@@ -109,13 +111,34 @@ namespace AllTechnologyWpf.Pages
         {
             Transform transform = new RotateTransform(contextRot)
             {
-                CenterX = 25,
+                CenterX = 50,
                 CenterY = 25
             };
             Photo.RenderTransform = transform;
             ListUsers.ItemsSource = App.DB.User.ToList();
             var user = App.DB.User.FirstOrDefault();
-            DataContext = user;
+
+            using (MemoryStream ms = new MemoryStream(user.Photo)) {
+                var bitmapImage = new BitmapImage();
+                bitmapImage.BeginInit();
+                bitmapImage.CacheOption = BitmapCacheOption.OnLoad;
+                bitmapImage.StreamSource = ms;
+                bitmapImage.EndInit();
+
+                if (IsGray)
+                {
+                    var imageBitmap = new FormatConvertedBitmap();
+                    imageBitmap.BeginInit();
+                    imageBitmap.Source = bitmapImage;
+                    imageBitmap.DestinationFormat = PixelFormats.Gray32Float;
+                    imageBitmap.EndInit();
+                    Photo.Source = imageBitmap;
+                }
+                else
+                {
+                    Photo.Source = bitmapImage;
+                }
+            }
         }
 
         private void Page_Loaded(object sender, RoutedEventArgs e)
@@ -219,12 +242,34 @@ namespace AllTechnologyWpf.Pages
         {
             startingTimer += 1;
             SetTimerText.Text = startingTimer.ToString();
+            SystemSounds.Beep.Play();
         }
 
         private void Save_Click(object sender, RoutedEventArgs e)
         {
             Settings.Default.savedText = SavedText.Text;
             Settings.Default.Save();
+        }
+
+        private void NewPage_Click(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new PageNew());
+        }
+
+        private void GrayDid_Click(object sender, RoutedEventArgs e)
+        {
+            IsGray = !IsGray;
+            if (IsGray)
+            {
+                GrayDid.Content = "Cl";
+                GrayDid.Background = Brushes.Green;
+            }
+            else
+            {
+                GrayDid.Content = "Dr";
+                GrayDid.Background = Brushes.Gray;
+            }
+            Refresh();
         }
     }
 }

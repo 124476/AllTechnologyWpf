@@ -54,10 +54,11 @@
             </TextBlock>
         </StackPanel>
         <StackPanel Grid.Row="1" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center">
-            <Image Source="{Binding Photo}" Width="100" Height="100" Name="Photo"></Image>
+            <Image Width="100" Height="100" Name="Photo"></Image>
             <StackPanel Orientation="Horizontal">
                 <Button x:Name="DownBtn" Click="DownBtn_Click" FontSize="17" Width="50"></Button>
                 <Button x:Name="UpBtn" Click="UpBtn_Click"  Content=">" FontSize="17" Width="50"></Button>
+                <Button Name="GrayDid" Click="GrayDid_Click" Content="Gr" FontSize="17" Width="30" Background="Gray"></Button>
             </StackPanel>
         </StackPanel>
 
@@ -89,6 +90,13 @@
                 </Button.Resources>
             </Button>
             <Button x:Name="GotXmlBtn" Content="Скачать в xml" FontSize="17" Width="200" Height="30" Click="GotXmlBtn_Click" Background="White">
+                <Button.Resources>
+                    <Style TargetType="Border">
+                        <Setter Property="CornerRadius" Value="20"></Setter>
+                    </Style>
+                </Button.Resources>
+            </Button>
+            <Button x:Name="NewPage" Content="Другая страница" FontSize="17" Background="White" Click="NewPage_Click">
                 <Button.Resources>
                     <Style TargetType="Border">
                         <Setter Property="CornerRadius" Value="20"></Setter>
