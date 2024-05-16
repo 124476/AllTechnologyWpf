@@ -3,7 +3,7 @@
       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
-      xmlns:local="clr-namespace:AllTechnologyWpf.Pages"
+      xmlns:local="clr-namespace:AllTechnologyWpf.Pages" xmlns:lvs="clr-namespace:LiveCharts.Wpf;assembly=LiveCharts.Wpf"
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
       Title="PageNew">
@@ -28,12 +28,26 @@
             <Button x:Name="GotQr" Content="Сгенерировать qr-код" FontSize="17" Click="GotQr_Click"  Background="White"></Button>
             <Button x:Name="SaveQr" Content="Скачать qr-код" FontSize="17" Click="SaveQr_Click" Background="White"></Button>
         </StackPanel>
+        <StackPanel Grid.Column="1" Grid.Row="2" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <TextBlock Text="Таймер сработал:" FontSize="17"></TextBlock>
+            <TextBlock Name="SetTimerText" Text="-" FontSize="17" HorizontalAlignment="Center"></TextBlock>
+            <Button x:Name="StartTimer" FontSize="17" Content="Запустить таймер" Background="White" Click="StartTimer_Click"></Button>
+        </StackPanel>
         <StackPanel Grid.Column="0" Grid.Row="2" HorizontalAlignment="Center" VerticalAlignment="Center">
             <TextBlock Text="Version:" FontSize="17"></TextBlock>
             <TextBlock x:Name="VersionPkText" FontSize="17"></TextBlock>
         </StackPanel>
         <StackPanel Grid.Column="1" Grid.Row="0">
             <Canvas x:Name="canvasDrive"></Canvas>
+        </StackPanel>
+        <StackPanel Grid.Column="2" Grid.Row="2" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <Button x:Name="OpenGrafik" FontSize="17" Content="График" Background="White" Click="OpenGrafik_Click" Width="200">
+                <Button.Resources>
+                    <Style TargetType="Border">
+                        <Setter Property="CornerRadius" Value="15"></Setter>
+                    </Style>
+                </Button.Resources>
+            </Button>
         </StackPanel>
     </Grid>
 </Page>

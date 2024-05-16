@@ -12,7 +12,13 @@
             <RowDefinition></RowDefinition>
         </Grid.RowDefinitions>
         <Image Source="/Imports/Logo.png" Grid.Row="0" Height="30" Width="50" HorizontalAlignment="Left" Margin="20,10,10,10" RenderOptions.BitmapScalingMode="Fant"></Image>
-        <Button x:Name="Back" Content="Назад" Margin="10,10,10,10" HorizontalAlignment="Right" Click="Back_Click" Width="200" FontSize="17"></Button>
+        <Button x:Name="Back" Content="Назад" Margin="10,10,10,10" HorizontalAlignment="Right" Click="Back_Click" Width="200" FontSize="17" Background="White">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="15"></Setter>
+                </Style>
+            </Button.Resources>
+        </Button>
         <Frame x:Name="MyFrame" NavigationUIVisibility="Hidden" ContentRendered="MyFrame_ContentRendered" Grid.Row="1"></Frame>
     </Grid>
 </Window>

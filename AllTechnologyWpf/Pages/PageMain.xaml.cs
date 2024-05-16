@@ -17,6 +17,7 @@ using System.Windows.Controls;
 using System.Windows.Data;
 using System.Windows.Documents;
 using System.Windows.Input;
+using System.Windows.Interop;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
@@ -25,6 +26,7 @@ using System.Windows.Threading;
 using System.Xml;
 using System.Xml.Serialization;
 using Color = System.Windows.Media.Color;
+using Path = System.IO.Path;
 
 namespace AllTechnologyWpf.Pages
 {
@@ -35,14 +37,13 @@ namespace AllTechnologyWpf.Pages
     {
         TextBlock textBlockLocal;
         int contextRot;
-        int startingTimer;
         bool IsGray;
         public PageMain()
         {
+            DataContext = App.DB.User.FirstOrDefault();
             InitializeComponent();
             DownBtn.Content = "<";
             contextRot = 0;
-            startingTimer = 0;
             if (Settings.Default.savedText != null)
             {
                 SavedText.Text = Settings.Default.savedText;
@@ -62,7 +63,7 @@ namespace AllTechnologyWpf.Pages
                 render.Render(GridCopy);
                 var encoder = new JpegBitmapEncoder();
                 encoder.Frames.Add(BitmapFrame.Create(render));
-                using (var file = new FileStream(dialog.FileName, FileMode.Create))
+                using(var file = new FileStream(dialog.FileName, FileMode.Create))
                 {
                     encoder.Save(file);
                 }
@@ -118,25 +119,29 @@ namespace AllTechnologyWpf.Pages
             ListUsers.ItemsSource = App.DB.User.ToList();
             var user = App.DB.User.FirstOrDefault();
 
-            using (MemoryStream ms = new MemoryStream(user.Photo)) {
+            using (MemoryStream ms = new MemoryStream(user.Photo))
+            {
                 var bitmapImage = new BitmapImage();
                 bitmapImage.BeginInit();
                 bitmapImage.CacheOption = BitmapCacheOption.OnLoad;
                 bitmapImage.StreamSource = ms;
                 bitmapImage.EndInit();
 
-                if (IsGray)
+                using (MemoryStream mss = new MemoryStream())
                 {
-                    var imageBitmap = new FormatConvertedBitmap();
-                    imageBitmap.BeginInit();
-                    imageBitmap.Source = bitmapImage;
-                    imageBitmap.DestinationFormat = PixelFormats.Gray32Float;
-                    imageBitmap.EndInit();
-                    Photo.Source = imageBitmap;
-                }
-                else
-                {
-                    Photo.Source = bitmapImage;
+                    if (IsGray)
+                    {
+                        var imageColor = new FormatConvertedBitmap();
+                        imageColor.BeginInit();
+                        imageColor.Source = bitmapImage;
+                        imageColor.DestinationFormat = PixelFormats.Gray32Float;
+                        imageColor.EndInit();
+                        Photo.Source = imageColor;
+                    }
+                    else
+                    {
+                        Photo.Source = bitmapImage;
+                    }
                 }
             }
         }
@@ -154,15 +159,15 @@ namespace AllTechnologyWpf.Pages
                 var file = File.Create(dialog.FileName);
                 file.Close();
 
-                var users = JsonConvert.SerializeObject(App.DB.User.Select(x => new
+                var jsonData = JsonConvert.SerializeObject(App.DB.User.Select(x => new
                 {
                     x.Id,
-                    x.Name,
-                }).ToList());
-
-                File.WriteAllText(dialog.FileName, users);
+                    x.Name
+                }));
+                File.WriteAllText(dialog.FileName, jsonData);
             }
         }
+
         private void GotXmlBtn_Click(object sender, RoutedEventArgs e)
         {
             var dialog = new SaveFileDialog() { Filter = "*.xml; | *.xml;" };
@@ -170,9 +175,8 @@ namespace AllTechnologyWpf.Pages
             {
                 var file = File.Create(dialog.FileName);
 
-                var xmlSer = new XmlSerializer(App.DB.User.ToList().GetType());
-
-                xmlSer.Serialize(file, App.DB.User.ToList());
+                var encoder = new XmlSerializer(App.DB.User.ToList().GetType());
+                encoder.Serialize(file, App.DB.User.ToList());
                 file.Close();
             }
         }
@@ -214,7 +218,6 @@ namespace AllTechnologyWpf.Pages
 
         private void PoiskHex_TextChanged(object sender, TextChangedEventArgs e)
         {
-
             try
             {
                 SearchColor.Background = new SolidColorBrush((Color)ColorConverter.ConvertFromString(PoiskHex.Text));
@@ -228,21 +231,6 @@ namespace AllTechnologyWpf.Pages
         private void Hyperlink_Click(object sender, RoutedEventArgs e)
         {
             System.Diagnostics.Process.Start("https://github.com/124476/AllTechnologyWpf");
-        }
-
-        private void StartTimer_Click(object sender, RoutedEventArgs e)
-        {
-            DispatcherTimer timer = new DispatcherTimer();
-            timer.Tick += Timer_Tick;
-            timer.Interval = TimeSpan.FromSeconds(5);
-            timer.Start();
-        }
-
-        private void Timer_Tick(object sender, EventArgs e)
-        {
-            startingTimer += 1;
-            SetTimerText.Text = startingTimer.ToString();
-            SystemSounds.Beep.Play();
         }
 
         private void Save_Click(object sender, RoutedEventArgs e)
@@ -270,6 +258,31 @@ namespace AllTechnologyWpf.Pages
                 GrayDid.Background = Brushes.Gray;
             }
             Refresh();
+        }
+
+        private void SaveForPhotos_Click(object sender, RoutedEventArgs e)
+        {
+            var dbDir = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Photos");
+            if (!Directory.Exists(dbDir))
+            {
+                Directory.CreateDirectory(dbDir);
+            }
+
+            dbDir += "/";
+
+            int txtFile = 0;
+            foreach(var item in App.DB.User)
+            {
+                var dialogFile = dbDir + txtFile + ".png";
+
+                var file = File.Create(dialogFile);
+                file.Close();
+
+                File.WriteAllBytes(dialogFile, item.Photo);
+                txtFile += 1;
+            }
+
+            MessageBox.Show($"Все фотографии сохранены в папку {dbDir}");
         }
     }
 }

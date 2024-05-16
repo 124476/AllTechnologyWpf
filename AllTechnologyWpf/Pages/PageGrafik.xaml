@@ -1,0 +1,61 @@
+﻿<Page x:Class="AllTechnologyWpf.Pages.PageGrafik"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:AllTechnologyWpf.Pages" xmlns:lvs="clr-namespace:LiveCharts.Wpf;assembly=LiveCharts.Wpf"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="PageGrafik">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition x:Name="ColumnOne" Width="0"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition></RowDefinition>
+                <RowDefinition Height="auto"></RowDefinition>
+            </Grid.RowDefinitions>
+            <lvs:CartesianChart Series="{Binding Series}" Name="Cartes"></lvs:CartesianChart>
+            <Button x:Name="OpenPage" Click="OpenPage_Click" Content="Изменить" FontSize="17" Width="200"
+                    Grid.Row="1" Margin="10,10,10,10" HorizontalAlignment="Right" Background="White">
+                <Button.Resources>
+                    <Style TargetType="Border">
+                        <Setter Property="CornerRadius" Value="15"></Setter>
+                    </Style>
+                </Button.Resources>
+            </Button>
+        </Grid>
+        <Grid Grid.Column="1" Width="400">
+            <Grid.RowDefinitions>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+            </Grid.RowDefinitions>
+            <StackPanel Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center" Width="250">
+                <Button x:Name="SetGrafikExcel" Content="Загрузить график из xlsx" FontSize="17" Background="White" Click="SetGrafikExcel_Click">
+                    <Button.Resources>
+                        <Style TargetType="Border">
+                            <Setter Property="CornerRadius" Value="15"></Setter>
+                        </Style>
+                    </Button.Resources>
+                </Button>
+                <Button x:Name="GotGrafikExcel" Content="Скачать график в xlsx" FontSize="17" Background="White" Click="GotGrafikExcel_Click">
+                    <Button.Resources>
+                        <Style TargetType="Border">
+                            <Setter Property="CornerRadius" Value="15"></Setter>
+                        </Style>
+                    </Button.Resources>
+                </Button>
+                <Button x:Name="ClosePage" Content="Закрыть" FontSize="17" Background="White" Click="ClosePage_Click">
+                    <Button.Resources>
+                        <Style TargetType="Border">
+                            <Setter Property="CornerRadius" Value="15"></Setter>
+                        </Style>
+                    </Button.Resources>
+                </Button>
+            </StackPanel>
+        </Grid>
+    </Grid>
+</Page>

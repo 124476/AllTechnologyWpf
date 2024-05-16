@@ -6,6 +6,7 @@ using System.Collections.Generic;
 using System.Drawing;
 using System.IO;
 using System.Linq;
+using System.Media;
 using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
@@ -19,6 +20,7 @@ using System.Windows.Media.Animation;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.Windows.Threading;
 using Brushes = System.Windows.Media.Brushes;
 
 namespace AllTechnologyWpf.Pages
@@ -28,12 +30,14 @@ namespace AllTechnologyWpf.Pages
     /// </summary>
     public partial class PageNew : Page
     {
+        int startingTimer;
         public PageNew()
         {
             InitializeComponent();
             var version = Assembly.GetEntryAssembly().GetName().Version;
 
             VersionPkText.Text = version.Major.ToString() + "." + version.Minor.ToString() + "." + version.Build.ToString();
+            startingTimer = 0;
             Refresh();
         }
 
@@ -118,6 +122,26 @@ namespace AllTechnologyWpf.Pages
 
                 QrI.Source = image;
             }
+        }
+
+        private void StartTimer_Click(object sender, RoutedEventArgs e)
+        {
+            DispatcherTimer timer = new DispatcherTimer();
+            timer.Tick += Timer_Tick;
+            timer.Interval = TimeSpan.FromSeconds(5);
+            timer.Start();
+        }
+
+        private void Timer_Tick(object sender, EventArgs e)
+        {
+            startingTimer += 1;
+            SetTimerText.Text = startingTimer.ToString();
+            SystemSounds.Beep.Play();
+        }
+
+        private void OpenGrafik_Click(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new PageGrafik());
         }
     }
 }
