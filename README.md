@@ -34,7 +34,7 @@
 ## Команды git
 ### Push в основную ветку
 git init <br />
-git add README.md<br />
+git add .<br />
 git commit -m "first commit" <br />
 git branch -M main <br />
 git remote add origin https://github.com/124476/AllTechnologyWpf <br />
