@@ -31,6 +31,8 @@
     <EntitySetMapping Name="User">
       <EntityTypeMapping TypeName="AllTechnologyWpfDatabaseModel.User">
         <MappingFragment StoreEntitySet="User">
+          <ScalarProperty Name="FullName" ColumnName="FullName" />
+          <ScalarProperty Name="LiderId" ColumnName="LiderId" />
           <ScalarProperty Name="Photo" ColumnName="Photo" />
           <ScalarProperty Name="Name" ColumnName="Name" />
           <ScalarProperty Name="Id" ColumnName="Id" />

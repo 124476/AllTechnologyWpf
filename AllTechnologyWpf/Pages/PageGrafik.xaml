@@ -18,7 +18,7 @@
                 <RowDefinition></RowDefinition>
                 <RowDefinition Height="auto"></RowDefinition>
             </Grid.RowDefinitions>
-            <lvs:CartesianChart Series="{Binding Series}" Name="Cartes"></lvs:CartesianChart>
+            <lvs:CartesianChart Series="{Binding Series}" Name="Cartes" Zoom="Xy"></lvs:CartesianChart>
             <Button x:Name="OpenPage" Click="OpenPage_Click" Content="Изменить" FontSize="17" Width="200"
                     Grid.Row="1" Margin="10,10,10,10" HorizontalAlignment="Right" Background="White">
                 <Button.Resources>

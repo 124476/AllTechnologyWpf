@@ -36,12 +36,30 @@
           <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="Name" Type="nvarchar" MaxLength="500" />
           <Property Name="Photo" Type="image" />
+          <Property Name="LiderId" Type="int" />
+          <Property Name="FullName" Type="nvarchar" MaxLength="100" />
         </EntityType>
+        <Association Name="FK_User_User">
+          <End Role="User" Type="Self.User" Multiplicity="0..1" />
+          <End Role="User1" Type="Self.User" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="User">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="User1">
+              <PropertyRef Name="LiderId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
         <EntityContainer Name="Хранилище AllTechnologyWpfDatabaseModelContainer">
           <EntitySet Name="Color" EntityType="Self.Color" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Grafik" EntityType="Self.Grafik" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="User" EntityType="Self.User" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="FK_User_User" Association="Self.FK_User_User">
+            <End Role="User" EntitySet="User" />
+            <End Role="User1" EntitySet="User" />
+          </AssociationSet>
         </EntityContainer>
       </Schema></edmx:StorageModels>
     <!-- CSDL content -->
@@ -52,6 +70,10 @@
           <EntitySet Name="Grafik" EntityType="AllTechnologyWpfDatabaseModel.Grafik" />
           <EntitySet Name="sysdiagrams" EntityType="AllTechnologyWpfDatabaseModel.sysdiagrams" />
           <EntitySet Name="User" EntityType="AllTechnologyWpfDatabaseModel.User" />
+          <AssociationSet Name="FK_User_User" Association="AllTechnologyWpfDatabaseModel.FK_User_User">
+            <End Role="User" EntitySet="User" />
+            <End Role="User1" EntitySet="User" />
+          </AssociationSet>
         </EntityContainer>
         <EntityType Name="Color">
           <Key>
@@ -84,7 +106,23 @@
           <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="Name" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
           <Property Name="Photo" Type="Binary" MaxLength="Max" FixedLength="false" />
+          <Property Name="LiderId" Type="Int32" />
+          <Property Name="FullName" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="User1" Relationship="AllTechnologyWpfDatabaseModel.FK_User_User" FromRole="User" ToRole="User1" />
+          <NavigationProperty Name="User2" Relationship="AllTechnologyWpfDatabaseModel.FK_User_User" FromRole="User1" ToRole="User" />
         </EntityType>
+        <Association Name="FK_User_User">
+          <End Type="AllTechnologyWpfDatabaseModel.User" Role="User" Multiplicity="0..1" />
+          <End Type="AllTechnologyWpfDatabaseModel.User" Role="User1" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="User">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="User1">
+              <PropertyRef Name="LiderId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
         </Schema>
     </edmx:ConceptualModels>
     <!-- C-S mapping content -->
@@ -121,6 +159,8 @@
           <EntitySetMapping Name="User">
             <EntityTypeMapping TypeName="AllTechnologyWpfDatabaseModel.User">
               <MappingFragment StoreEntitySet="User">
+                <ScalarProperty Name="FullName" ColumnName="FullName" />
+                <ScalarProperty Name="LiderId" ColumnName="LiderId" />
                 <ScalarProperty Name="Photo" ColumnName="Photo" />
                 <ScalarProperty Name="Name" ColumnName="Name" />
                 <ScalarProperty Name="Id" ColumnName="Id" />

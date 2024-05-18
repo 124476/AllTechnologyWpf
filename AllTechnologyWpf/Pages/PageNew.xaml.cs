@@ -1,4 +1,5 @@
-﻿using MessagingToolkit.QRCode.Codec;
+﻿using AllTechnologyWpf.Models;
+using MessagingToolkit.QRCode.Codec;
 using MessagingToolkit.QRCode.Codec.Data;
 using Microsoft.Win32;
 using System;
@@ -31,10 +32,16 @@ namespace AllTechnologyWpf.Pages
     public partial class PageNew : Page
     {
         int startingTimer;
+        DispatcherTimer timer;
+        List<TreeViewItem> items;
         public PageNew()
         {
             InitializeComponent();
             var version = Assembly.GetEntryAssembly().GetName().Version;
+
+            timer = new DispatcherTimer();
+            timer.Tick += Timer_Tick;
+            timer.Interval = TimeSpan.FromSeconds(2);
 
             VersionPkText.Text = version.Major.ToString() + "." + version.Minor.ToString() + "." + version.Build.ToString();
             startingTimer = 0;
@@ -57,6 +64,40 @@ namespace AllTechnologyWpf.Pages
                 canvasDrive.Children.Add(line);
                 x1 += 5;
                 y1 = item.Num;
+            }
+
+            var user = App.DB.User.FirstOrDefault();
+            var lider = user.MaxUser;
+            items = new List<TreeViewItem>();
+
+            TreePanel.Items.Clear();
+            TreeViewItem treeViewItem = new TreeViewItem();
+            treeViewItem.Header = lider.FullName;
+            TreePanel.Items.Add(treeViewItem);
+
+            items.Add(treeViewItem);
+
+            var users = App.DB.User.Where(x => x.LiderId == lider.Id).ToList();
+            foreach(var item in users)
+            {
+                StartNewUser(item);
+                items.Remove(items[items.Count - 1]);
+            }
+        }
+
+        private void StartNewUser(User lider)
+        {
+            TreeViewItem treeViewItem = new TreeViewItem();
+            treeViewItem.Header = lider.FullName;
+            items[items.Count - 1].Items.Add(treeViewItem);
+
+            items.Add(treeViewItem);
+
+            var users = App.DB.User.Where(x => x.LiderId == lider.Id).ToList();
+            foreach (var item in users)
+            {
+                StartNewUser(item);
+                items.Remove(items[items.Count - 1]);
             }
         }
 
@@ -126,9 +167,6 @@ namespace AllTechnologyWpf.Pages
 
         private void StartTimer_Click(object sender, RoutedEventArgs e)
         {
-            DispatcherTimer timer = new DispatcherTimer();
-            timer.Tick += Timer_Tick;
-            timer.Interval = TimeSpan.FromSeconds(5);
             timer.Start();
         }
 
@@ -142,6 +180,25 @@ namespace AllTechnologyWpf.Pages
         private void OpenGrafik_Click(object sender, RoutedEventArgs e)
         {
             NavigationService.Navigate(new PageGrafik());
+        }
+
+        private void StopTimer_Click(object sender, RoutedEventArgs e)
+        {
+            timer.Stop();
+        }
+
+        private void Vopros_Click(object sender, RoutedEventArgs e)
+        {
+            var result = MessageBox.Show("Ты любишь спать?", "Вопрос", MessageBoxButton.YesNo);
+            if (result == MessageBoxResult.Yes)
+                Vopros.Background = Brushes.Green;
+            else
+                Vopros.Background = Brushes.Red;
+        }
+
+        private void Page_Loaded(object sender, RoutedEventArgs e)
+        {
+            Refresh();
         }
     }
 }

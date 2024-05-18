@@ -15,5 +15,22 @@ namespace AllTechnologyWpf.Models
                 return "Gray8";
             }
         }
+
+        public User MaxUser
+        {
+            get
+            {
+                var liderId = LiderId;
+                User user = this;
+
+                while(liderId != null)
+                {
+                    user = App.DB.User.FirstOrDefault(x => x.Id == liderId);
+                    liderId = user.LiderId;
+                }
+
+                return user;
+            }
+        }
     }
 }

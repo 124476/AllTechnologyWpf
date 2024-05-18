@@ -1,4 +1,4 @@
-﻿// Создание кода T4 для модели "C:\Users\Stipo6\source\repos\AllTechnologyWpf\AllTechnologyWpf\Models\TechDatabase.edmx" включено. 
+﻿// Создание кода T4 для модели "C:\Users\art82\source\repos\AllTechnologyWpf\AllTechnologyWpf\Models\TechDatabase.edmx" включено. 
 // Чтобы включить формирование кода прежних версий, измените значение свойства "Стратегия создания кода" конструктора
 // на "Legacy ObjectContext". Это свойство доступно в окне "Свойства", если модель
 // открыта в конструкторе.

@@ -5,6 +5,10 @@
     <EntitySet Name="Grafik" EntityType="AllTechnologyWpfDatabaseModel.Grafik" />
     <EntitySet Name="sysdiagrams" EntityType="AllTechnologyWpfDatabaseModel.sysdiagrams" />
     <EntitySet Name="User" EntityType="AllTechnologyWpfDatabaseModel.User" />
+    <AssociationSet Name="FK_User_User" Association="AllTechnologyWpfDatabaseModel.FK_User_User">
+      <End Role="User" EntitySet="User" />
+      <End Role="User1" EntitySet="User" />
+    </AssociationSet>
   </EntityContainer>
   <EntityType Name="Color">
     <Key>
@@ -37,5 +41,21 @@
     <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
     <Property Name="Name" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
     <Property Name="Photo" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="LiderId" Type="Int32" />
+    <Property Name="FullName" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="User1" Relationship="AllTechnologyWpfDatabaseModel.FK_User_User" FromRole="User" ToRole="User1" />
+    <NavigationProperty Name="User2" Relationship="AllTechnologyWpfDatabaseModel.FK_User_User" FromRole="User1" ToRole="User" />
   </EntityType>
+  <Association Name="FK_User_User">
+    <End Type="AllTechnologyWpfDatabaseModel.User" Role="User" Multiplicity="0..1" />
+    <End Type="AllTechnologyWpfDatabaseModel.User" Role="User1" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="User1">
+        <PropertyRef Name="LiderId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
 </Schema>
