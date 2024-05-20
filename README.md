@@ -35,10 +35,9 @@
 ### Push в основную ветку
 git init <br />
 git add .<br />
-git commit -m "first commit" <br />
-git branch -M main <br />
+git commit -m "First commit" <br />
 git remote add origin https://github.com/124476/AllTechnologyWpf <br />
-git push -u origin main <br />
+git push -u origin master <br />
 
 ### Push в ветку
 git init <br />
@@ -52,3 +51,11 @@ git push -u Fails Fails <br />
 git add . <br />
 git commit -m "Two Version" <br />
 git push
+
+### Команды в пустом repo
+git init <br />
+git add README.MD<br />
+git commit -m "first commit" <br />
+git branch -M main <br />
+git remote add origin https://github.com/124476/AllTechnologyWpf <br />
+git push -u origin main <br />
