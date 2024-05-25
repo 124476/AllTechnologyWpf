@@ -31,11 +31,11 @@
       "RelativeMoniker": "D:0:0:{E7F16AE5-88EE-466E-A7DA-9576C9DD70E4}|AllTechnologyWpf\\AllTechnologyWpf.csproj|solutionrelative:alltechnologywpf\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E7F16AE5-88EE-466E-A7DA-9576C9DD70E4}|AllTechnologyWpf\\AllTechnologyWpf.csproj|c:\\users\\art82\\source\\repos\\alltechnologywpf\\alltechnologywpf\\windows\\oknocolors.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{E7F16AE5-88EE-466E-A7DA-9576C9DD70E4}|AllTechnologyWpf\\AllTechnologyWpf.csproj|C:\\Users\\art82\\source\\repos\\AllTechnologyWpf\\alltechnologywpf\\windows\\oknocolors.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E7F16AE5-88EE-466E-A7DA-9576C9DD70E4}|AllTechnologyWpf\\AllTechnologyWpf.csproj|solutionrelative:alltechnologywpf\\windows\\oknocolors.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E7F16AE5-88EE-466E-A7DA-9576C9DD70E4}|AllTechnologyWpf\\AllTechnologyWpf.csproj|c:\\users\\art82\\source\\repos\\alltechnologywpf\\alltechnologywpf\\windows\\oknocolors.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{E7F16AE5-88EE-466E-A7DA-9576C9DD70E4}|AllTechnologyWpf\\AllTechnologyWpf.csproj|C:\\Users\\art82\\source\\repos\\AllTechnologyWpf\\alltechnologywpf\\windows\\oknocolors.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{E7F16AE5-88EE-466E-A7DA-9576C9DD70E4}|AllTechnologyWpf\\AllTechnologyWpf.csproj|solutionrelative:alltechnologywpf\\windows\\oknocolors.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
@@ -81,7 +81,7 @@
       "DocumentGroups": [
         {
           "DockedHeight": 405,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 9,
           "Children": [
             {
               "$type": "Bookmark",
@@ -100,6 +100,18 @@
               "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
             },
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{c9c0ae26-aa77-11d2-b3f0-0000f87570ee}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
               "$type": "Document",
               "DocumentIndex": 7,
               "Title": "OknoColors.xaml.cs",
@@ -109,8 +121,7 @@
               "RelativeToolTip": "AllTechnologyWpf\\Windows\\OknoColors.xaml.cs",
               "ViewState": "AQIAAAkAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-18T21:01:15.661Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-18T21:01:15.661Z"
             },
             {
               "$type": "Document",
@@ -121,8 +132,7 @@
               "ToolTip": "C:\\Users\\art82\\source\\repos\\AllTechnologyWpf\\AllTechnologyWpf\\Windows\\OknoColors.xaml",
               "RelativeToolTip": "AllTechnologyWpf\\Windows\\OknoColors.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-05-18T21:00:32.916Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-18T21:00:32.916Z"
             },
             {
               "$type": "Document",
@@ -132,18 +142,10 @@
               "RelativeDocumentMoniker": "AllTechnologyWpf\\Pages\\PageNew.xaml.cs",
               "ToolTip": "C:\\Users\\art82\\source\\repos\\AllTechnologyWpf\\AllTechnologyWpf\\Pages\\PageNew.xaml.cs",
               "RelativeToolTip": "AllTechnologyWpf\\Pages\\PageNew.xaml.cs",
-              "ViewState": "AQIAAKEAAAAAAAAAAAAUwKYAAAAAAAAA",
+              "ViewState": "AQIAAKEAAAAAAAAAAAAUwLIAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-06T10:08:16.92Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{c9c0ae26-aa77-11d2-b3f0-0000f87570ee}"
             },
             {
               "$type": "Document",
@@ -154,8 +156,7 @@
               "ToolTip": "C:\\Users\\art82\\source\\repos\\AllTechnologyWpf\\AllTechnologyWpf\\Pages\\PageNew.xaml",
               "RelativeToolTip": "AllTechnologyWpf\\Pages\\PageNew.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-05-06T10:08:15.111Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-06T10:08:15.111Z"
             },
             {
               "$type": "Document",
@@ -167,8 +168,7 @@
               "RelativeToolTip": "AllTechnologyWpf\\Pages\\PageGrafik.xaml.cs",
               "ViewState": "AQIAABUAAAAAAAAAAAAjwFsAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-16T16:26:00.291Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-16T16:26:00.291Z"
             },
             {
               "$type": "Document",
@@ -179,8 +179,7 @@
               "ToolTip": "C:\\Users\\art82\\source\\repos\\AllTechnologyWpf\\AllTechnologyWpf\\Pages\\PageGrafik.xaml",
               "RelativeToolTip": "AllTechnologyWpf\\Pages\\PageGrafik.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-05-16T16:28:48.004Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-16T16:28:48.004Z"
             },
             {
               "$type": "Document",
@@ -191,8 +190,7 @@
               "ToolTip": "C:\\Users\\art82\\source\\repos\\AllTechnologyWpf\\AllTechnologyWpf\\MainWindow.xaml",
               "RelativeToolTip": "AllTechnologyWpf\\MainWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-05-06T10:00:26.596Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-06T10:00:26.596Z"
             },
             {
               "$type": "Document",
@@ -227,8 +225,7 @@
               "RelativeToolTip": "AllTechnologyWpf\\Pages\\PageMain.xaml.cs",
               "ViewState": "AQIAAAEBAAAAAAAAAAAUwB0BAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-06T10:08:09.961Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-06T10:08:09.961Z"
             },
             {
               "$type": "Document",
@@ -297,8 +294,7 @@
               "ToolTip": "C:\\Users\\art82\\source\\repos\\AllTechnologyWpf\\AllTechnologyWpf\\Pages\\PageMain.xaml",
               "RelativeToolTip": "AllTechnologyWpf\\Pages\\PageMain.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-05-06T10:00:22.987Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-06T10:00:22.987Z"
             },
             {
               "$type": "Document",
@@ -309,8 +305,7 @@
               "ToolTip": "C:\\Users\\art82\\source\\repos\\AllTechnologyWpf\\AllTechnologyWpf\\App.xaml",
               "RelativeToolTip": "AllTechnologyWpf\\App.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-05-06T09:55:39.273Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-06T09:55:39.273Z"
             },
             {
               "$type": "Document",
@@ -323,20 +318,6 @@
               "ViewState": "AQIAABsAAAAAAAAAAAAAADUAAAAlAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-06T09:55:36.664Z"
-            }
-          ]
-        },
-        {
-          "DockedHeight": 131,
-          "SelectedChildIndex": -1,
-          "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
             }
           ]
         }
