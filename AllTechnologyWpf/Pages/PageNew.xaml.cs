@@ -1,4 +1,5 @@
 ﻿using AllTechnologyWpf.Models;
+using AllTechnologyWpf.Windows;
 using MessagingToolkit.QRCode.Codec;
 using MessagingToolkit.QRCode.Codec.Data;
 using Microsoft.Win32;
@@ -22,6 +23,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using System.Windows.Threading;
+using System.Xml.Linq;
 using Brushes = System.Windows.Media.Brushes;
 
 namespace AllTechnologyWpf.Pages
@@ -46,6 +48,14 @@ namespace AllTechnologyWpf.Pages
             VersionPkText.Text = version.Major.ToString() + "." + version.Minor.ToString() + "." + version.Build.ToString();
             startingTimer = 0;
             Refresh();
+        }
+
+        public class NewsItem
+        {
+            public string Title { get; set; }
+            public string Link { get; set; }
+            public string Description { get; set; }
+            public DateTime PubDate { get; set; }
         }
 
         private void Refresh()
@@ -83,6 +93,16 @@ namespace AllTechnologyWpf.Pages
                 StartNewUser(item);
                 items.Remove(items[items.Count - 1]);
             }
+
+            XDocument doc = XDocument.Load("https://westi-24.webnode.ru/rss/all.xml");
+            var news = doc.Descendants("item").Select(x => new NewsItem
+            {
+                Title = (string)x.Element("title"),
+                Link = (string)x.Element("link"),
+                Description = (string)x.Element("description"),
+                PubDate = DateTime.Parse((string)x.Element("pubDate"))
+            }).ToList();
+            DataNews.ItemsSource = news;
         }
 
         private void StartNewUser(User lider)
@@ -199,6 +219,12 @@ namespace AllTechnologyWpf.Pages
         private void Page_Loaded(object sender, RoutedEventArgs e)
         {
             Refresh();
+        }
+
+        private void SendBtn_Click(object sender, RoutedEventArgs e)
+        {
+            var dialog = new OknoSend();
+            dialog.ShowDialog();
         }
     }
 }

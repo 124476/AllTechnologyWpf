@@ -29,18 +29,28 @@
             <Button x:Name="GotQr" Content="Сгенерировать qr-код" FontSize="17" Click="GotQr_Click"  Background="White"></Button>
             <Button x:Name="SaveQr" Content="Скачать qr-код" FontSize="17" Click="SaveQr_Click" Background="White"></Button>
         </StackPanel>
-        <StackPanel Grid.Column="1" Grid.Row="2" HorizontalAlignment="Center" VerticalAlignment="Center" Width="200">
+        <StackPanel Grid.Column="1" Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center" Width="200">
             <TextBlock Text="Таймер сработал:" FontSize="17" HorizontalAlignment="Center"></TextBlock>
             <TextBlock Name="SetTimerText" Text="-" FontSize="17" HorizontalAlignment="Center"></TextBlock>
             <Button x:Name="StartTimer" FontSize="17" Content="Запустить таймер" Background="White" Click="StartTimer_Click"></Button>
             <Button x:Name="StopTimer" FontSize="17" Content="Остановить таймер" Background="White" Click="StopTimer_Click"></Button>
         </StackPanel>
-        <StackPanel Grid.Column="0" Grid.Row="2" HorizontalAlignment="Center" VerticalAlignment="Center">
+        <StackPanel Grid.Column="1" Grid.Row="2" HorizontalAlignment="Center" VerticalAlignment="Center">
             <TextBlock Text="Version:" FontSize="17"></TextBlock>
             <TextBlock x:Name="VersionPkText" FontSize="17"></TextBlock>
         </StackPanel>
         <StackPanel Grid.Column="1" Grid.Row="0">
             <Canvas x:Name="canvasDrive"></Canvas>
+        </StackPanel>
+        <StackPanel Grid.Column="0" Grid.Row="2">
+            <DataGrid x:Name="DataNews" FontSize="17" AutoGenerateColumns="False" IsReadOnly="True" Height="180" Margin="10,10,10,10">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="Title" Binding="{Binding Title}"></DataGridTextColumn>
+                    <DataGridTextColumn Header="Link" Binding="{Binding Link}"></DataGridTextColumn>
+                    <DataGridTextColumn Header="Description" Binding="{Binding Description}"></DataGridTextColumn>
+                    <DataGridTextColumn Header="PubDate" Binding="{Binding PubDate}"></DataGridTextColumn>
+                </DataGrid.Columns>
+            </DataGrid>
         </StackPanel>
         <StackPanel Grid.Column="2" Grid.Row="2" HorizontalAlignment="Center" VerticalAlignment="Center">
             <Button x:Name="OpenGrafik" FontSize="17" Content="График" Background="White" Click="OpenGrafik_Click" Width="200">
@@ -51,6 +61,13 @@
                 </Button.Resources>
             </Button>
             <Button x:Name="Vopros" FontSize="17" Content="Вопрос" Background="White" Click="Vopros_Click"  Width="200">
+                <Button.Resources>
+                    <Style TargetType="Border">
+                        <Setter Property="CornerRadius" Value="15"></Setter>
+                    </Style>
+                </Button.Resources>
+            </Button>
+            <Button x:Name="SendBtn" FontSize="17" Content="Отправить письмо" Background="White" Click="SendBtn_Click" Width="200">
                 <Button.Resources>
                     <Style TargetType="Border">
                         <Setter Property="CornerRadius" Value="15"></Setter>

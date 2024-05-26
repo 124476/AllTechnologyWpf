@@ -16,5 +16,19 @@ namespace AllTechnologyWpf
     {
         public static AllTechnologyWpfDatabaseEntities DB = new AllTechnologyWpfDatabaseEntities();
         public static Models.Color color;
+        public static string EmailName = "bestdiaryrussian@gmail.com";
+        public static string EmailPassword = "scnx oqpv qwxh ipwx";
+
+        public App()
+        {
+            var currentDomain = AppDomain.CurrentDomain;
+            DispatcherUnhandledException += App_DispatcherUnhandledException;
+        }
+
+        private void App_DispatcherUnhandledException(object sender, System.Windows.Threading.DispatcherUnhandledExceptionEventArgs e)
+        {
+            e.Handled = true;
+            MessageBox.Show("Error");
+        }
     }
 }

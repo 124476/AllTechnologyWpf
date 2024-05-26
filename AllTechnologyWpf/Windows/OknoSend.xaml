@@ -1,0 +1,20 @@
+﻿<Window x:Class="AllTechnologyWpf.Windows.OknoSend"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AllTechnologyWpf.Windows"
+        mc:Ignorable="d"
+        Title="Send" Height="250" Width="400" MinHeight="250" MinWidth="400">
+    <Grid>
+        <StackPanel Width="200" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <TextBlock Text="Email to" FontSize="17"></TextBlock>
+            <TextBox x:Name="EmailTo" FontSize="17"></TextBox>
+            <TextBlock Text="File" FontSize="17"></TextBlock>
+            <TextBlock x:Name="FileDoc" FontSize="17"></TextBlock>
+            <Button x:Name="SetFile" FontSize="17" Click="SetFile_Click"  Content="Загрузить" Background="White"></Button>
+            <Button x:Name="GetFile" FontSize="17" Click="GetFile_Click"  Content="Скачать" Background="White" Margin="0,1,0,0"></Button>
+            <Button x:Name="SendBtn" FontSize="17" Click="SendBtn_Click" Content="Отправить" Background="White" Margin="0,10,0,0"></Button>
+        </StackPanel>
+    </Grid>
+</Window>

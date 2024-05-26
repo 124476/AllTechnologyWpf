@@ -70,3 +70,13 @@ C:\Users\art82\source\repos\AllTechnologyWpf\AllTechnologyWpf\bin\Debug\LiveChar
 C:\Users\art82\source\repos\AllTechnologyWpf\AllTechnologyWpf\bin\Debug\LiveCharts.Wpf.xml
 C:\Users\art82\source\repos\AllTechnologyWpf\AllTechnologyWpf\obj\Debug\Pages\PageGrafik.g.cs
 C:\Users\art82\source\repos\AllTechnologyWpf\AllTechnologyWpf\obj\Debug\Pages\PageGrafik.baml
+C:\Users\Stipo6\source\repos\AllTechnologyWpf\AllTechnologyWpf\bin\Debug\LiveCharts.dll
+C:\Users\Stipo6\source\repos\AllTechnologyWpf\AllTechnologyWpf\bin\Debug\LiveCharts.Wpf.dll
+C:\Users\Stipo6\source\repos\AllTechnologyWpf\AllTechnologyWpf\bin\Debug\LiveCharts.pdb
+C:\Users\Stipo6\source\repos\AllTechnologyWpf\AllTechnologyWpf\bin\Debug\LiveCharts.xml
+C:\Users\Stipo6\source\repos\AllTechnologyWpf\AllTechnologyWpf\bin\Debug\LiveCharts.Wpf.pdb
+C:\Users\Stipo6\source\repos\AllTechnologyWpf\AllTechnologyWpf\bin\Debug\LiveCharts.Wpf.xml
+C:\Users\Stipo6\source\repos\AllTechnologyWpf\AllTechnologyWpf\obj\Debug\Pages\PageGrafik.g.cs
+C:\Users\Stipo6\source\repos\AllTechnologyWpf\AllTechnologyWpf\obj\Debug\Pages\PageGrafik.baml
+C:\Users\Stipo6\source\repos\AllTechnologyWpf\AllTechnologyWpf\obj\Debug\Windows\OknoSend.g.cs
+C:\Users\Stipo6\source\repos\AllTechnologyWpf\AllTechnologyWpf\obj\Debug\Windows\OknoSend.baml
