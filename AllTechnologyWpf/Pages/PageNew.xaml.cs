@@ -1,4 +1,5 @@
-﻿using AllTechnologyWpf.Models;
+﻿using AllTechnologyWpf;
+using AllTechnologyWpf.Models;
 using AllTechnologyWpf.Windows;
 using MessagingToolkit.QRCode.Codec;
 using MessagingToolkit.QRCode.Codec.Data;
@@ -63,8 +64,8 @@ namespace AllTechnologyWpf.Pages
             int x1 = 0;
             int y1 = 0;
 
-            foreach(var item in App.DB.Grafik)
-            {  
+            foreach (var item in App.DB.Grafik)
+            {
                 Line line = new Line();
                 line.X1 = x1;
                 line.X2 = x1 + 5;
@@ -76,24 +77,6 @@ namespace AllTechnologyWpf.Pages
                 y1 = item.Num;
             }
 
-            var user = App.DB.User.FirstOrDefault();
-            var lider = user.MaxUser;
-            items = new List<TreeViewItem>();
-
-            TreePanel.Items.Clear();
-            TreeViewItem treeViewItem = new TreeViewItem();
-            treeViewItem.Header = lider.FullName;
-            TreePanel.Items.Add(treeViewItem);
-
-            items.Add(treeViewItem);
-
-            var users = App.DB.User.Where(x => x.LiderId == lider.Id).ToList();
-            foreach(var item in users)
-            {
-                StartNewUser(item);
-                items.Remove(items[items.Count - 1]);
-            }
-
             XDocument doc = XDocument.Load("https://westi-24.webnode.ru/rss/all.xml");
             var news = doc.Descendants("item").Select(x => new NewsItem
             {
@@ -103,21 +86,44 @@ namespace AllTechnologyWpf.Pages
                 PubDate = DateTime.Parse((string)x.Element("pubDate"))
             }).ToList();
             DataNews.ItemsSource = news;
-        }
 
-        private void StartNewUser(User lider)
-        {
+            var user = App.DB.User.FirstOrDefault();
+            var lider = user.MaxUser;
+
+            TreePanel.Items.Clear();
+            items = new List<TreeViewItem>();
+
             TreeViewItem treeViewItem = new TreeViewItem();
             treeViewItem.Header = lider.FullName;
-            items[items.Count - 1].Items.Add(treeViewItem);
-
-            items.Add(treeViewItem);
+            TreePanel.Items.Add(treeViewItem);
 
             var users = App.DB.User.Where(x => x.LiderId == lider.Id).ToList();
+
             foreach (var item in users)
             {
-                StartNewUser(item);
-                items.Remove(items[items.Count - 1]);
+                TreeViewItem treeViewItem1 = new TreeViewItem();
+                treeViewItem1.Header = item.FullName;
+                treeViewItem.Items.Add(treeViewItem1);
+                items.Add(treeViewItem1);
+
+                StartUser(item);
+                items.Remove(treeViewItem1);
+            }
+        }
+
+        private void StartUser(User lider)
+        {
+            var users = App.DB.User.Where(x => x.LiderId == lider.Id).ToList();
+
+            foreach (var item in users)
+            {
+                TreeViewItem treeViewItem1 = new TreeViewItem();
+                treeViewItem1.Header = item.FullName;
+                items[items.Count - 1].Items.Add(treeViewItem1);
+                items.Add(treeViewItem1);
+
+                StartUser(item);
+                items.Remove(treeViewItem1);
             }
         }
 
