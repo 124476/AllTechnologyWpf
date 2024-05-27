@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml.Serialization;
 
 namespace AllTechnologyWpf.Models
 {
@@ -15,7 +16,7 @@ namespace AllTechnologyWpf.Models
                 return "Gray8";
             }
         }
-
+        [XmlIgnore]
         public User MaxUser
         {
             get

@@ -104,6 +104,7 @@
       <DependentUpon>TechDatabase.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\Partials\User.cs" />
+    <Compile Include="Models\SerialisibleModels\XMLUser.cs" />
     <Compile Include="Pages\PageGrafik.xaml.cs">
       <DependentUpon>PageGrafik.xaml</DependentUpon>
     </Compile>

@@ -104,6 +104,13 @@
                     </Style>
                 </Button.Resources>
             </Button>
+            <Button x:Name="GotCsvBtn" Content="Скачать в csv" FontSize="17" Width="200" Height="30" Click="GotCsvBtn_Click"  Background="White">
+                <Button.Resources>
+                    <Style TargetType="Border">
+                        <Setter Property="CornerRadius" Value="20"></Setter>
+                    </Style>
+                </Button.Resources>
+            </Button>
             <Button x:Name="NewPage" Content="Другая страница" FontSize="17" Background="White" Click="NewPage_Click">
                 <Button.Resources>
                     <Style TargetType="Border">

@@ -1,4 +1,5 @@
 ﻿using AllTechnologyWpf.Models;
+using AllTechnologyWpf.Models.SerialisibleModels;
 using AllTechnologyWpf.Properties;
 using AllTechnologyWpf.Windows;
 using Microsoft.Win32;
@@ -56,6 +57,7 @@ namespace AllTechnologyWpf.Pages
 
         private void GotPhotoGrid_Click(object sender, RoutedEventArgs e)
         {
+
             var dialog = new SaveFileDialog() { Filter = "*.jpeg; | *.jpeg;" };
             if (dialog.ShowDialog().GetValueOrDefault())
             {
@@ -63,10 +65,11 @@ namespace AllTechnologyWpf.Pages
                 render.Render(GridCopy);
                 var encoder = new JpegBitmapEncoder();
                 encoder.Frames.Add(BitmapFrame.Create(render));
-                using(var file = new FileStream(dialog.FileName, FileMode.Create))
-                {
-                    encoder.Save(file);
-                }
+
+                var file = File.Create(dialog.FileName);
+                encoder.Save(file);
+                file.Close();
+                System.Diagnostics.Process.Start(dialog.FileName);
             }
         }
 
@@ -92,11 +95,11 @@ namespace AllTechnologyWpf.Pages
 
         private void GotNewPhoto_Click(object sender, RoutedEventArgs e)
         {
-            var dialog = new OpenFileDialog() { Filter = "*.png; | *.png;", Multiselect=true };
+            var dialog = new OpenFileDialog() { Filter = "*.png; | *.png;", Multiselect = true };
             if (dialog.ShowDialog().GetValueOrDefault())
             {
                 var files = dialog.FileNames;
-                foreach(var file in files)
+                foreach (var file in files)
                 {
                     User user = new User();
                     user.Photo = File.ReadAllBytes(file);
@@ -159,12 +162,16 @@ namespace AllTechnologyWpf.Pages
                 var file = File.Create(dialog.FileName);
                 file.Close();
 
-                var jsonData = JsonConvert.SerializeObject(App.DB.User.Select(x => new
+                var data = JsonConvert.SerializeObject(App.DB.User.Select(x => new
                 {
                     x.Id,
-                    x.Name
+                    x.Name,
+                    x.FullName,
+                    Lider = x.User2.FullName
                 }));
-                File.WriteAllText(dialog.FileName, jsonData);
+
+                File.WriteAllText(dialog.FileName, data);
+                System.Diagnostics.Process.Start(dialog.FileName);
             }
         }
 
@@ -175,9 +182,18 @@ namespace AllTechnologyWpf.Pages
             {
                 var file = File.Create(dialog.FileName);
 
-                var encoder = new XmlSerializer(App.DB.User.ToList().GetType());
-                encoder.Serialize(file, App.DB.User.ToList());
+                var users = App.DB.User.ToList().Select(x => new XMLUser
+                {
+                    Name = x.Name,
+                    FullName = x.FullName,
+                    LiderId = x.LiderId,
+                    Id = x.Id,
+                }).ToList();
+
+                var xmlEncoder = new XmlSerializer(users.GetType());
+                xmlEncoder.Serialize(file, users);
                 file.Close();
+                System.Diagnostics.Process.Start(dialog.FileName);
             }
         }
 
@@ -271,7 +287,7 @@ namespace AllTechnologyWpf.Pages
             dbDir += "/";
 
             int txtFile = 0;
-            foreach(var item in App.DB.User)
+            foreach (var item in App.DB.User)
             {
                 var dialogFile = dbDir + txtFile + ".png";
 
@@ -282,7 +298,28 @@ namespace AllTechnologyWpf.Pages
                 txtFile += 1;
             }
 
-            MessageBox.Show($"Все фотографии сохранены в папку {dbDir}");
+            System.Diagnostics.Process.Start(dbDir);
+        }
+
+        private void GotCsvBtn_Click(object sender, RoutedEventArgs e)
+        {
+            var dialog = new SaveFileDialog() { Filter = "*.csv; | *.csv;" };
+            if (dialog.ShowDialog().GetValueOrDefault())
+            {
+                var file = File.Create(dialog.FileName);
+                file.Close();
+
+                var text = "Id;Name;FullName;LiderId";
+
+                var users = App.DB.User.ToList();
+                foreach (var user in users)
+                {
+                    text += $"\n{user.Id};{user.Name};{user.FullName};{user.LiderId}";
+                }
+
+                File.WriteAllText(dialog.FileName, text);
+                System.Diagnostics.Process.Start(dialog.FileName);
+            }
         }
     }
 }

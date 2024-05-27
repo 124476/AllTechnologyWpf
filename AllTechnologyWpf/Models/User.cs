@@ -11,7 +11,8 @@ namespace AllTechnologyWpf.Models
 {
     using System;
     using System.Collections.Generic;
-    
+    using System.Xml.Serialization;
+
     public partial class User
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
@@ -25,9 +26,11 @@ namespace AllTechnologyWpf.Models
         public byte[] Photo { get; set; }
         public Nullable<int> LiderId { get; set; }
         public string FullName { get; set; }
-    
+        [XmlIgnore]
+
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<User> User1 { get; set; }
+        [XmlIgnore]
         public virtual User User2 { get; set; }
     }
 }
