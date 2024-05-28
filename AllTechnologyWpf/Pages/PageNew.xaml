@@ -9,7 +9,7 @@
       Title="PageNew"
       Loaded="Page_Loaded">
 
-    <Grid>
+    <Grid x:Name="GridCopy">
         <Grid.ColumnDefinitions>
             <ColumnDefinition></ColumnDefinition>
             <ColumnDefinition></ColumnDefinition>
@@ -61,6 +61,13 @@
                 </Button.Resources>
             </Button>
             <Button x:Name="Vopros" FontSize="17" Content="Вопрос" Background="White" Click="Vopros_Click"  Width="200">
+                <Button.Resources>
+                    <Style TargetType="Border">
+                        <Setter Property="CornerRadius" Value="15"></Setter>
+                    </Style>
+                </Button.Resources>
+            </Button>
+            <Button x:Name="PrintBtn" FontSize="17" Content="Печатать страницу" Background="White" Click="PrintBtn_Click"  Width="200">
                 <Button.Resources>
                     <Style TargetType="Border">
                         <Setter Property="CornerRadius" Value="15"></Setter>

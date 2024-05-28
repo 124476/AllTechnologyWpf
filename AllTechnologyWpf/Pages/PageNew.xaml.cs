@@ -174,20 +174,19 @@ namespace AllTechnologyWpf.Pages
         private void GotQr_Click(object sender, RoutedEventArgs e)
         {
             var encoder = new QRCodeEncoder();
-            var bitmapImage = encoder.Encode(QrText.Text);
-
+            var bitmap = encoder.Encode(QrText.Text);
             using (MemoryStream ms = new MemoryStream())
             {
                 ms.Position = 0;
-                bitmapImage.Save(ms, System.Drawing.Imaging.ImageFormat.Bmp);
+                bitmap.Save(ms, System.Drawing.Imaging.ImageFormat.Bmp);
 
-                var image = new BitmapImage();
-                image.BeginInit();
-                image.CacheOption = BitmapCacheOption.OnLoad;
-                image.StreamSource = ms;
-                image.EndInit();
+                var bitmapImage = new BitmapImage();
+                bitmapImage.BeginInit();
+                bitmapImage.CacheOption = BitmapCacheOption.OnLoad;
+                bitmapImage.StreamSource = ms;
+                bitmapImage.EndInit();
 
-                QrI.Source = image;
+                QrI.Source = bitmapImage;
             }
         }
 
@@ -231,6 +230,12 @@ namespace AllTechnologyWpf.Pages
         {
             var dialog = new OknoSend();
             dialog.ShowDialog();
+        }
+
+        private void PrintBtn_Click(object sender, RoutedEventArgs e)
+        {
+            var dialog = new PrintDialog();
+            dialog.PrintVisual(GridCopy, "");
         }
     }
 }

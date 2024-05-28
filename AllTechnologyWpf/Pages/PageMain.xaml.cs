@@ -57,7 +57,6 @@ namespace AllTechnologyWpf.Pages
 
         private void GotPhotoGrid_Click(object sender, RoutedEventArgs e)
         {
-
             var dialog = new SaveFileDialog() { Filter = "*.jpeg; | *.jpeg;" };
             if (dialog.ShowDialog().GetValueOrDefault())
             {
