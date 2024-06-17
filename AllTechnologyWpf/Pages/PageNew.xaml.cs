@@ -237,5 +237,10 @@ namespace AllTechnologyWpf.Pages
             var dialog = new PrintDialog();
             dialog.PrintVisual(GridCopy, "");
         }
+
+        private void CalendarBtn_Click(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new PageCalendar());
+        }
     }
 }

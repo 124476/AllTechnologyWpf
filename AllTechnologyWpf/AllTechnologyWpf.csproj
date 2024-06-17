@@ -97,6 +97,9 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Controls\UserCalendar.xaml.cs">
+      <DependentUpon>UserCalendar.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Models\Color.cs">
       <DependentUpon>TechDatabase.tt</DependentUpon>
     </Compile>
@@ -105,6 +108,9 @@
     </Compile>
     <Compile Include="Models\Partials\User.cs" />
     <Compile Include="Models\SerialisibleModels\XMLUser.cs" />
+    <Compile Include="Pages\PageCalendar.xaml.cs">
+      <DependentUpon>PageCalendar.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Pages\PageGrafik.xaml.cs">
       <DependentUpon>PageGrafik.xaml</DependentUpon>
     </Compile>
@@ -117,6 +123,10 @@
     <Compile Include="Windows\OknoSend.xaml.cs">
       <DependentUpon>OknoSend.xaml</DependentUpon>
     </Compile>
+    <Page Include="Controls\UserCalendar.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -129,6 +139,10 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="Pages\PageCalendar.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Pages\PageGrafik.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>

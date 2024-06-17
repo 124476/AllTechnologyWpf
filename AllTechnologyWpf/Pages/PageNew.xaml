@@ -81,6 +81,13 @@
                     </Style>
                 </Button.Resources>
             </Button>
+            <Button x:Name="CalendarBtn" FontSize="17" Content="Календарь" Background="White" Click="CalendarBtn_Click"  Width="200">
+                <Button.Resources>
+                    <Style TargetType="Border">
+                        <Setter Property="CornerRadius" Value="15"></Setter>
+                    </Style>
+                </Button.Resources>
+            </Button>
         </StackPanel>
         <TreeView x:Name="TreePanel" Height="280" ScrollViewer.HorizontalScrollBarVisibility="Hidden" HorizontalAlignment="Center" 
                   VerticalAlignment="Center" Grid.Row="0" Grid.Column="2" Grid.RowSpan="2" Width="200"></TreeView>

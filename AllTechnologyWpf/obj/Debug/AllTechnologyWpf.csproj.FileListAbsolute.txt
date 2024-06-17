@@ -82,3 +82,8 @@ C:\Users\Stipo6\source\repos\AllTechnologyWpf\AllTechnologyWpf\obj\Debug\Windows
 C:\Users\Stipo6\source\repos\AllTechnologyWpf\AllTechnologyWpf\obj\Debug\Windows\OknoSend.baml
 C:\Users\art82\source\repos\AllTechnologyWpf\AllTechnologyWpf\obj\Debug\Windows\OknoSend.g.cs
 C:\Users\art82\source\repos\AllTechnologyWpf\AllTechnologyWpf\obj\Debug\Windows\OknoSend.baml
+C:\Users\Stipo6\source\repos\AllTechnologyWpf\AllTechnologyWpf\obj\Debug\Controls\UserCalendar.g.cs
+C:\Users\Stipo6\source\repos\AllTechnologyWpf\AllTechnologyWpf\obj\Debug\Pages\PageCalendar.g.cs
+C:\Users\Stipo6\source\repos\AllTechnologyWpf\AllTechnologyWpf\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\Stipo6\source\repos\AllTechnologyWpf\AllTechnologyWpf\obj\Debug\Controls\UserCalendar.baml
+C:\Users\Stipo6\source\repos\AllTechnologyWpf\AllTechnologyWpf\obj\Debug\Pages\PageCalendar.baml
