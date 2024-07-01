@@ -1,0 +1,12 @@
+﻿<Window x:Class="AllTechnologyWpf.Windows.OknoPieChart"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AllTechnologyWpf.Windows" xmlns:charts="clr-namespace:LiveCharts.Wpf;assembly=LiveCharts.Wpf"
+        mc:Ignorable="d"
+        Title="LiveCharts" Height="450" Width="800" MinHeight="450" MinWidth="450">
+    <Grid>
+        <charts:PieChart Series="{Binding Series}" x:Name="Cartes"></charts:PieChart>
+    </Grid>
+</Window>

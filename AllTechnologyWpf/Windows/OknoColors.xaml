@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:AllTechnologyWpf.Windows"
         mc:Ignorable="d"
-        Title="OknoColors" Height="400" Width="400" MinHeight="400" MinWidth="400">
+        Title="Colors" Height="400" Width="400" MinHeight="400" MinWidth="400">
     <Grid>
         <ListView x:Name="ListColors">
             <ListView.ItemsPanel>

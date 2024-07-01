@@ -6,7 +6,7 @@
       xmlns:local="clr-namespace:AllTechnologyWpf.Pages" xmlns:lvs="clr-namespace:LiveCharts.Wpf;assembly=LiveCharts.Wpf"
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
-      Title="PageNew"
+      Title="Page two"
       Loaded="Page_Loaded">
 
     <Grid x:Name="GridCopy">
@@ -53,41 +53,11 @@
             </DataGrid>
         </StackPanel>
         <StackPanel Grid.Column="2" Grid.Row="2" HorizontalAlignment="Center" VerticalAlignment="Center">
-            <Button x:Name="OpenGrafik" FontSize="17" Content="График" Background="White" Click="OpenGrafik_Click" Width="200">
-                <Button.Resources>
-                    <Style TargetType="Border">
-                        <Setter Property="CornerRadius" Value="15"></Setter>
-                    </Style>
-                </Button.Resources>
-            </Button>
-            <Button x:Name="Vopros" FontSize="17" Content="Вопрос" Background="White" Click="Vopros_Click"  Width="200">
-                <Button.Resources>
-                    <Style TargetType="Border">
-                        <Setter Property="CornerRadius" Value="15"></Setter>
-                    </Style>
-                </Button.Resources>
-            </Button>
-            <Button x:Name="PrintBtn" FontSize="17" Content="Печатать страницу" Background="White" Click="PrintBtn_Click"  Width="200">
-                <Button.Resources>
-                    <Style TargetType="Border">
-                        <Setter Property="CornerRadius" Value="15"></Setter>
-                    </Style>
-                </Button.Resources>
-            </Button>
-            <Button x:Name="SendBtn" FontSize="17" Content="Отправить письмо" Background="White" Click="SendBtn_Click" Width="200">
-                <Button.Resources>
-                    <Style TargetType="Border">
-                        <Setter Property="CornerRadius" Value="15"></Setter>
-                    </Style>
-                </Button.Resources>
-            </Button>
-            <Button x:Name="CalendarBtn" FontSize="17" Content="Календарь" Background="White" Click="CalendarBtn_Click"  Width="200">
-                <Button.Resources>
-                    <Style TargetType="Border">
-                        <Setter Property="CornerRadius" Value="15"></Setter>
-                    </Style>
-                </Button.Resources>
-            </Button>
+            <Button x:Name="OpenGrafik" Content="График" Click="OpenGrafik_Click" Style="{StaticResource StandartButton}"></Button>
+            <Button x:Name="Vopros" Content="Вопрос" Click="Vopros_Click" Style="{StaticResource StandartButton}"></Button>
+            <Button x:Name="PrintBtn" Content="Печатать страницу" Click="PrintBtn_Click" Style="{StaticResource StandartButton}"></Button>
+            <Button x:Name="SendBtn" Content="Отправить письмо" Click="SendBtn_Click" Style="{StaticResource StandartButton}"></Button>
+            <Button x:Name="OtherBtn"  Content="Еще одна страница" Click="OtherBtn_Click" Style="{StaticResource StandartButton}"></Button>
         </StackPanel>
         <TreeView x:Name="TreePanel" Height="280" ScrollViewer.HorizontalScrollBarVisibility="Hidden" HorizontalAlignment="Center" 
                   VerticalAlignment="Center" Grid.Row="0" Grid.Column="2" Grid.RowSpan="2" Width="200"></TreeView>

@@ -2,6 +2,7 @@
 using LiveCharts;
 using LiveCharts.Wpf;
 using Microsoft.Office.Interop.Excel;
+using System.Windows.Forms.DataVisualization.Charting;
 using Microsoft.Win32;
 using System;
 using System.Collections.Generic;
@@ -19,6 +20,9 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using Page = System.Windows.Controls.Page;
+using ChartArea = System.Windows.Forms.DataVisualization.Charting.ChartArea;
+using Series = System.Windows.Forms.DataVisualization.Charting.Series;
+using AllTechnologyWpf.Windows;
 
 namespace AllTechnologyWpf.Pages
 {
@@ -30,6 +34,17 @@ namespace AllTechnologyWpf.Pages
         public PageGrafik()
         {
             InitializeComponent();
+
+            ChartPayments.ChartAreas.Add(new ChartArea("Main"));
+
+            var currentSeries = new Series("Payments")
+            {
+                IsValueShownAsLabel = true
+            };
+            ChartPayments.Series.Add(currentSeries);
+
+            ComboGraficks.ItemsSource = Enum.GetValues(typeof(SeriesChartType));
+            ComboGraficks.SelectedIndex = 0;
             Refresh();
         }
 
@@ -71,23 +86,16 @@ namespace AllTechnologyWpf.Pages
 
         private void Refresh()
         {
-            ChartValues<double> doubles = new ChartValues<double>();
+            var currentType = (SeriesChartType)ComboGraficks.SelectedItem;
+
+            Series currentSeries = ChartPayments.Series.FirstOrDefault();
+            currentSeries.ChartType = currentType;
+            currentSeries.Points.Clear();
+
             foreach (var item in App.DB.Grafik)
             {
-                doubles.Add(item.Num);
-            }
-
-            var seriaes = new LiveCharts.SeriesCollection()
-            {
-                new LineSeries
-                {
-                    Title = "Grafik",
-                    Values = doubles,
-                    Fill = null
-                }
+                currentSeries.Points.AddXY(item.Num, item.Id);
             };
-
-            Cartes.Series = seriaes;
         }
 
         private void GotGrafikExcel_Click(object sender, RoutedEventArgs e)
@@ -124,6 +132,35 @@ namespace AllTechnologyWpf.Pages
         {
             ColumnOne.Width = GridLength.Auto;
             OpenPage.Visibility = Visibility.Hidden;
+        }
+
+        private void ComboGraficks_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            Refresh();
+        }
+
+        private void LiveCharts_Click(object sender, RoutedEventArgs e)
+        {
+            var dialog = new OknoLiveCharts();
+            dialog.ShowDialog();
+        }
+
+        private void PieChart_Click(object sender, RoutedEventArgs e)
+        {
+            var dialog = new OknoPieChart();
+            dialog.ShowDialog();
+        }
+
+        private void TabChart_Click(object sender, RoutedEventArgs e)
+        {
+            var dialog = new OknoTabChart();
+            dialog.ShowDialog();
+        }
+
+        private void AnglChart_Click(object sender, RoutedEventArgs e)
+        {
+            var dialog = new OknoAnglChart();
+            dialog.ShowDialog();
         }
     }
 }

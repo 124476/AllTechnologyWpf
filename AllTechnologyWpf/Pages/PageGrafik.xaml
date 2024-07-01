@@ -3,10 +3,11 @@
       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
-      xmlns:local="clr-namespace:AllTechnologyWpf.Pages" xmlns:lvs="clr-namespace:LiveCharts.Wpf;assembly=LiveCharts.Wpf"
+      xmlns:local="clr-namespace:AllTechnologyWpf.Pages" 
+      xmlns:charts="clr-namespace:System.Windows.Forms.DataVisualization.Charting;assembly=System.Windows.Forms.DataVisualization"
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
-      Title="PageGrafik">
+      Title="Grafik">
 
     <Grid>
         <Grid.ColumnDefinitions>
@@ -18,43 +19,29 @@
                 <RowDefinition></RowDefinition>
                 <RowDefinition Height="auto"></RowDefinition>
             </Grid.RowDefinitions>
-            <lvs:CartesianChart Series="{Binding Series}" Name="Cartes" Zoom="Xy"></lvs:CartesianChart>
-            <Button x:Name="OpenPage" Click="OpenPage_Click" Content="Изменить" FontSize="17" Width="200"
-                    Grid.Row="1" Margin="10,10,10,10" HorizontalAlignment="Right" Background="White">
-                <Button.Resources>
-                    <Style TargetType="Border">
-                        <Setter Property="CornerRadius" Value="15"></Setter>
-                    </Style>
-                </Button.Resources>
-            </Button>
+            <WindowsFormsHost >
+                <charts:Chart x:Name="ChartPayments">
+                    <charts:Chart.Legends>
+                        <charts:Legend></charts:Legend>
+                    </charts:Chart.Legends>
+                </charts:Chart>
+            </WindowsFormsHost>
+            <Button x:Name="OpenPage" Click="OpenPage_Click" Content="Изменить" Grid.Row="1" Margin="10" HorizontalAlignment="Right" Style="{StaticResource StandartButton}"></Button>
         </Grid>
         <Grid Grid.Column="1" Width="400">
             <Grid.RowDefinitions>
                 <RowDefinition></RowDefinition>
                 <RowDefinition></RowDefinition>
             </Grid.RowDefinitions>
-            <StackPanel Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center" Width="250">
-                <Button x:Name="SetGrafikExcel" Content="Загрузить график из xlsx" FontSize="17" Background="White" Click="SetGrafikExcel_Click">
-                    <Button.Resources>
-                        <Style TargetType="Border">
-                            <Setter Property="CornerRadius" Value="15"></Setter>
-                        </Style>
-                    </Button.Resources>
-                </Button>
-                <Button x:Name="GotGrafikExcel" Content="Скачать график в xlsx" FontSize="17" Background="White" Click="GotGrafikExcel_Click">
-                    <Button.Resources>
-                        <Style TargetType="Border">
-                            <Setter Property="CornerRadius" Value="15"></Setter>
-                        </Style>
-                    </Button.Resources>
-                </Button>
-                <Button x:Name="ClosePage" Content="Закрыть" FontSize="17" Background="White" Click="ClosePage_Click">
-                    <Button.Resources>
-                        <Style TargetType="Border">
-                            <Setter Property="CornerRadius" Value="15"></Setter>
-                        </Style>
-                    </Button.Resources>
-                </Button>
+            <StackPanel Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center" Width="200">
+                <ComboBox Name="ComboGraficks" FontSize="17" SelectionChanged="ComboGraficks_SelectionChanged" Margin="0,0,0,10"></ComboBox>
+                <Button x:Name="SetGrafikExcel" Content="Загрузить график из xlsx" Click="SetGrafikExcel_Click" Style="{StaticResource StandartButton}"></Button>
+                <Button x:Name="GotGrafikExcel" Content="Скачать график в xlsx" Click="GotGrafikExcel_Click" Style="{StaticResource StandartButton}"></Button>
+                <Button x:Name="LiveCharts" Content="График" Click="LiveCharts_Click"  Style="{StaticResource StandartButton}"></Button>
+                <Button x:Name="PieChart" Content="Диаграмма" Click="PieChart_Click"  Style="{StaticResource StandartButton}"></Button>
+                <Button x:Name="TabChart" Content="Таблица" Click="TabChart_Click"  Style="{StaticResource StandartButton}"></Button>
+                <Button x:Name="AnglChart" Content="Колонки" Click="AnglChart_Click"  Style="{StaticResource StandartButton}"></Button>
+                <Button x:Name="ClosePage" Content="Закрыть" Click="ClosePage_Click" Style="{StaticResource StandartButton}"></Button>
             </StackPanel>
         </Grid>
     </Grid>

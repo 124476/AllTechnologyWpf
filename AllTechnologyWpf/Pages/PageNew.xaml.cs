@@ -238,9 +238,9 @@ namespace AllTechnologyWpf.Pages
             dialog.PrintVisual(GridCopy, "");
         }
 
-        private void CalendarBtn_Click(object sender, RoutedEventArgs e)
+        private void OtherBtn_Click(object sender, RoutedEventArgs e)
         {
-            NavigationService.Navigate(new PageCalendar());
+            NavigationService.Navigate(new PageNewTwo());
         }
     }
 }

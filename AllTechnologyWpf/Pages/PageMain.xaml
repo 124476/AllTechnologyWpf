@@ -6,7 +6,7 @@
       xmlns:local="clr-namespace:AllTechnologyWpf.Pages"
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
-      Title="PageMain"
+      Title="Main page"
       Loaded="Page_Loaded">
 
     <Grid Name="GridCopy" Background="White">
@@ -62,20 +62,8 @@
             </StackPanel>
         </StackPanel>
         <StackPanel Grid.Row="2" Grid.Column="0" Width="200" HorizontalAlignment="Center" VerticalAlignment="Center">
-            <Button x:Name="GotNewPhoto" Content="Загрузить новые фото" FontSize="17" Width="200" Height="30" Click="GotNewPhoto_Click" Background="White">
-                <Button.Resources>
-                    <Style TargetType="Border">
-                        <Setter Property="CornerRadius" Value="20"></Setter>
-                    </Style>
-                </Button.Resources>
-            </Button>
-            <Button x:Name="SaveForPhotos" Content="Скачать все фото" FontSize="17" Click="SaveForPhotos_Click" Background="White">
-                <Button.Resources>
-                    <Style TargetType="Border">
-                        <Setter Property="CornerRadius" Value="15"></Setter>
-                    </Style>
-                </Button.Resources>
-            </Button>
+            <Button x:Name="GotNewPhoto" Content="Загрузить новые фото" Click="GotNewPhoto_Click" Style="{StaticResource StandartButton}"></Button>
+            <Button x:Name="SaveForPhotos" Content="Скачать все фото" Click="SaveForPhotos_Click" Style="{StaticResource StandartButton}"></Button>
         </StackPanel>
         <StackPanel Grid.Row="1" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" Width="200">
             <TextBlock x:Name="SearchColor" FontSize="17" Height="20"></TextBlock>
@@ -83,41 +71,11 @@
             <Button x:Name="GotNewColor" FontSize="17" Content="Палитра" Click="GotNewColor_Click" Background="White"></Button>
         </StackPanel>
         <StackPanel Grid.Column="2" Grid.Row="2" VerticalAlignment="Center" HorizontalAlignment="Center">
-            <Button x:Name="GotPhotoGrid" Click="GotPhotoGrid_Click" Content="Сфоткать grid" FontSize="17" Width="200" Height="30" Background="White">
-                <Button.Resources>
-                    <Style TargetType="Border">
-                        <Setter Property="CornerRadius" Value="20"></Setter>
-                    </Style>
-                </Button.Resources>
-            </Button>
-            <Button x:Name="GotJsonBtn" Content="Скачать в json" FontSize="17" Width="200" Height="30" Click="GotJsonBtn_Click" Background="White">
-                <Button.Resources>
-                    <Style TargetType="Border">
-                        <Setter Property="CornerRadius" Value="20"></Setter>
-                    </Style>
-                </Button.Resources>
-            </Button>
-            <Button x:Name="GotXmlBtn" Content="Скачать в xml" FontSize="17" Width="200" Height="30" Click="GotXmlBtn_Click" Background="White">
-                <Button.Resources>
-                    <Style TargetType="Border">
-                        <Setter Property="CornerRadius" Value="20"></Setter>
-                    </Style>
-                </Button.Resources>
-            </Button>
-            <Button x:Name="GotCsvBtn" Content="Скачать в csv" FontSize="17" Width="200" Height="30" Click="GotCsvBtn_Click"  Background="White">
-                <Button.Resources>
-                    <Style TargetType="Border">
-                        <Setter Property="CornerRadius" Value="20"></Setter>
-                    </Style>
-                </Button.Resources>
-            </Button>
-            <Button x:Name="NewPage" Content="Другая страница" FontSize="17" Background="White" Click="NewPage_Click">
-                <Button.Resources>
-                    <Style TargetType="Border">
-                        <Setter Property="CornerRadius" Value="20"></Setter>
-                    </Style>
-                </Button.Resources>
-            </Button>
+            <Button x:Name="GotPhotoGrid" Click="GotPhotoGrid_Click" Content="Сфоткать grid" Style="{StaticResource StandartButton}"></Button>
+            <Button x:Name="GotJsonBtn" Content="Скачать в json" Click="GotJsonBtn_Click" Style="{StaticResource StandartButton}"></Button>
+            <Button x:Name="GotXmlBtn" Content="Скачать в xml" Click="GotXmlBtn_Click" Style="{StaticResource StandartButton}"></Button>
+            <Button x:Name="GotCsvBtn" Content="Скачать в csv" Click="GotCsvBtn_Click" Style="{StaticResource StandartButton}"></Button>
+            <Button x:Name="NewPage" Content="Другая страница" Click="NewPage_Click" Style="{StaticResource StandartButton}"></Button>
         </StackPanel>
         <StackPanel Grid.Column="1" Grid.Row="2" HorizontalAlignment="Center" VerticalAlignment="Center">
             <TextBlock Text="Сохраненный текст:" FontSize="17"></TextBlock>

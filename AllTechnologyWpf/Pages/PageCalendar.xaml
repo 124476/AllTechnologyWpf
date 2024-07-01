@@ -7,7 +7,7 @@
       xmlns:uc="clr-namespace:AllTechnologyWpf.Controls"
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
-      Title="PageCalendar">
+      Title="Calendar">
 
     <Grid>
         <uc:UserCalendar></uc:UserCalendar>

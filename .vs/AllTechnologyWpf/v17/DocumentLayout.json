@@ -3,8 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\Stipo6\\source\\repos\\AllTechnologyWpf\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E7F16AE5-88EE-466E-A7DA-9576C9DD70E4}|AllTechnologyWpf\\AllTechnologyWpf.csproj|c:\\users\\stipo6\\source\\repos\\alltechnologywpf\\alltechnologywpf\\controls\\usercalendar.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{E7F16AE5-88EE-466E-A7DA-9576C9DD70E4}|AllTechnologyWpf\\AllTechnologyWpf.csproj|solutionrelative:alltechnologywpf\\controls\\usercalendar.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{E7F16AE5-88EE-466E-A7DA-9576C9DD70E4}|AllTechnologyWpf\\AllTechnologyWpf.csproj|c:\\users\\stipo6\\source\\repos\\alltechnologywpf\\alltechnologywpf\\pages\\pagenewtwo.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E7F16AE5-88EE-466E-A7DA-9576C9DD70E4}|AllTechnologyWpf\\AllTechnologyWpf.csproj|solutionrelative:alltechnologywpf\\pages\\pagenewtwo.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E7F16AE5-88EE-466E-A7DA-9576C9DD70E4}|AllTechnologyWpf\\AllTechnologyWpf.csproj|C:\\Users\\Stipo6\\source\\repos\\AllTechnologyWpf\\alltechnologywpf\\pages\\pagegrafik.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E7F16AE5-88EE-466E-A7DA-9576C9DD70E4}|AllTechnologyWpf\\AllTechnologyWpf.csproj|solutionrelative:alltechnologywpf\\pages\\pagegrafik.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E7F16AE5-88EE-466E-A7DA-9576C9DD70E4}|AllTechnologyWpf\\AllTechnologyWpf.csproj|c:\\users\\stipo6\\source\\repos\\alltechnologywpf\\alltechnologywpf\\pages\\pagenewtwo.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{E7F16AE5-88EE-466E-A7DA-9576C9DD70E4}|AllTechnologyWpf\\AllTechnologyWpf.csproj|solutionrelative:alltechnologywpf\\pages\\pagenewtwo.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E7F16AE5-88EE-466E-A7DA-9576C9DD70E4}|AllTechnologyWpf\\AllTechnologyWpf.csproj|C:\\Users\\Stipo6\\source\\repos\\AllTechnologyWpf\\alltechnologywpf\\pages\\pagenew.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E7F16AE5-88EE-466E-A7DA-9576C9DD70E4}|AllTechnologyWpf\\AllTechnologyWpf.csproj|solutionrelative:alltechnologywpf\\pages\\pagenew.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E7F16AE5-88EE-466E-A7DA-9576C9DD70E4}|AllTechnologyWpf\\AllTechnologyWpf.csproj|C:\\Users\\Stipo6\\source\\repos\\AllTechnologyWpf\\alltechnologywpf\\pages\\pagenew.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
@@ -15,28 +27,84 @@
       "RelativeMoniker": "D:0:0:{E7F16AE5-88EE-466E-A7DA-9576C9DD70E4}|AllTechnologyWpf\\AllTechnologyWpf.csproj|solutionrelative:alltechnologywpf\\pages\\pagemain.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E7F16AE5-88EE-466E-A7DA-9576C9DD70E4}|AllTechnologyWpf\\AllTechnologyWpf.csproj|c:\\users\\stipo6\\source\\repos\\alltechnologywpf\\alltechnologywpf\\controls\\usercalendar.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{E7F16AE5-88EE-466E-A7DA-9576C9DD70E4}|AllTechnologyWpf\\AllTechnologyWpf.csproj|C:\\Users\\Stipo6\\source\\repos\\AllTechnologyWpf\\alltechnologywpf\\pages\\pagemain.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E7F16AE5-88EE-466E-A7DA-9576C9DD70E4}|AllTechnologyWpf\\AllTechnologyWpf.csproj|solutionrelative:alltechnologywpf\\pages\\pagemain.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E7F16AE5-88EE-466E-A7DA-9576C9DD70E4}|AllTechnologyWpf\\AllTechnologyWpf.csproj|C:\\Users\\Stipo6\\source\\repos\\AllTechnologyWpf\\alltechnologywpf\\pages\\pagegrafik.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{E7F16AE5-88EE-466E-A7DA-9576C9DD70E4}|AllTechnologyWpf\\AllTechnologyWpf.csproj|solutionrelative:alltechnologywpf\\pages\\pagegrafik.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E7F16AE5-88EE-466E-A7DA-9576C9DD70E4}|AllTechnologyWpf\\AllTechnologyWpf.csproj|C:\\Users\\Stipo6\\source\\repos\\AllTechnologyWpf\\alltechnologywpf\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{E7F16AE5-88EE-466E-A7DA-9576C9DD70E4}|AllTechnologyWpf\\AllTechnologyWpf.csproj|solutionrelative:alltechnologywpf\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E7F16AE5-88EE-466E-A7DA-9576C9DD70E4}|AllTechnologyWpf\\AllTechnologyWpf.csproj|c:\\users\\stipo6\\source\\repos\\alltechnologywpf\\alltechnologywpf\\windows\\oknopiechart.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{E7F16AE5-88EE-466E-A7DA-9576C9DD70E4}|AllTechnologyWpf\\AllTechnologyWpf.csproj|solutionrelative:alltechnologywpf\\windows\\oknopiechart.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E7F16AE5-88EE-466E-A7DA-9576C9DD70E4}|AllTechnologyWpf\\AllTechnologyWpf.csproj|c:\\users\\stipo6\\source\\repos\\alltechnologywpf\\alltechnologywpf\\windows\\oknotabchart.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E7F16AE5-88EE-466E-A7DA-9576C9DD70E4}|AllTechnologyWpf\\AllTechnologyWpf.csproj|solutionrelative:alltechnologywpf\\windows\\oknotabchart.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E7F16AE5-88EE-466E-A7DA-9576C9DD70E4}|AllTechnologyWpf\\AllTechnologyWpf.csproj|c:\\users\\stipo6\\source\\repos\\alltechnologywpf\\alltechnologywpf\\windows\\oknotabchart.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{E7F16AE5-88EE-466E-A7DA-9576C9DD70E4}|AllTechnologyWpf\\AllTechnologyWpf.csproj|solutionrelative:alltechnologywpf\\windows\\oknotabchart.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E7F16AE5-88EE-466E-A7DA-9576C9DD70E4}|AllTechnologyWpf\\AllTechnologyWpf.csproj|C:\\Users\\Stipo6\\source\\repos\\AllTechnologyWpf\\alltechnologywpf\\windows\\oknosend.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E7F16AE5-88EE-466E-A7DA-9576C9DD70E4}|AllTechnologyWpf\\AllTechnologyWpf.csproj|solutionrelative:alltechnologywpf\\windows\\oknosend.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E7F16AE5-88EE-466E-A7DA-9576C9DD70E4}|AllTechnologyWpf\\AllTechnologyWpf.csproj|C:\\Users\\Stipo6\\source\\repos\\AllTechnologyWpf\\alltechnologywpf\\windows\\oknosend.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{E7F16AE5-88EE-466E-A7DA-9576C9DD70E4}|AllTechnologyWpf\\AllTechnologyWpf.csproj|solutionrelative:alltechnologywpf\\windows\\oknosend.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E7F16AE5-88EE-466E-A7DA-9576C9DD70E4}|AllTechnologyWpf\\AllTechnologyWpf.csproj|C:\\Users\\Stipo6\\source\\repos\\AllTechnologyWpf\\alltechnologywpf\\pages\\pagecalendar.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{E7F16AE5-88EE-466E-A7DA-9576C9DD70E4}|AllTechnologyWpf\\AllTechnologyWpf.csproj|solutionrelative:alltechnologywpf\\pages\\pagecalendar.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E7F16AE5-88EE-466E-A7DA-9576C9DD70E4}|AllTechnologyWpf\\AllTechnologyWpf.csproj|c:\\users\\stipo6\\source\\repos\\alltechnologywpf\\alltechnologywpf\\windows\\oknolivecharts.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E7F16AE5-88EE-466E-A7DA-9576C9DD70E4}|AllTechnologyWpf\\AllTechnologyWpf.csproj|solutionrelative:alltechnologywpf\\windows\\oknolivecharts.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E7F16AE5-88EE-466E-A7DA-9576C9DD70E4}|AllTechnologyWpf\\AllTechnologyWpf.csproj|c:\\users\\stipo6\\source\\repos\\alltechnologywpf\\alltechnologywpf\\windows\\oknolivecharts.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{E7F16AE5-88EE-466E-A7DA-9576C9DD70E4}|AllTechnologyWpf\\AllTechnologyWpf.csproj|solutionrelative:alltechnologywpf\\windows\\oknolivecharts.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E7F16AE5-88EE-466E-A7DA-9576C9DD70E4}|AllTechnologyWpf\\AllTechnologyWpf.csproj|c:\\users\\stipo6\\source\\repos\\alltechnologywpf\\alltechnologywpf\\windows\\oknoanglchart.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{E7F16AE5-88EE-466E-A7DA-9576C9DD70E4}|AllTechnologyWpf\\AllTechnologyWpf.csproj|solutionrelative:alltechnologywpf\\windows\\oknoanglchart.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E7F16AE5-88EE-466E-A7DA-9576C9DD70E4}|AllTechnologyWpf\\AllTechnologyWpf.csproj|c:\\users\\stipo6\\source\\repos\\alltechnologywpf\\alltechnologywpf\\windows\\oknoanglchart.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E7F16AE5-88EE-466E-A7DA-9576C9DD70E4}|AllTechnologyWpf\\AllTechnologyWpf.csproj|solutionrelative:alltechnologywpf\\windows\\oknoanglchart.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E7F16AE5-88EE-466E-A7DA-9576C9DD70E4}|AllTechnologyWpf\\AllTechnologyWpf.csproj|c:\\users\\stipo6\\source\\repos\\alltechnologywpf\\alltechnologywpf\\windows\\oknopiechart.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E7F16AE5-88EE-466E-A7DA-9576C9DD70E4}|AllTechnologyWpf\\AllTechnologyWpf.csproj|solutionrelative:alltechnologywpf\\windows\\oknopiechart.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E7F16AE5-88EE-466E-A7DA-9576C9DD70E4}|AllTechnologyWpf\\AllTechnologyWpf.csproj|C:\\Users\\Stipo6\\source\\repos\\AllTechnologyWpf\\alltechnologywpf\\windows\\oknocolors.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E7F16AE5-88EE-466E-A7DA-9576C9DD70E4}|AllTechnologyWpf\\AllTechnologyWpf.csproj|solutionrelative:alltechnologywpf\\windows\\oknocolors.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E7F16AE5-88EE-466E-A7DA-9576C9DD70E4}|AllTechnologyWpf\\AllTechnologyWpf.csproj|C:\\Users\\Stipo6\\source\\repos\\AllTechnologyWpf\\alltechnologywpf\\windows\\oknocolors.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{E7F16AE5-88EE-466E-A7DA-9576C9DD70E4}|AllTechnologyWpf\\AllTechnologyWpf.csproj|solutionrelative:alltechnologywpf\\windows\\oknocolors.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E7F16AE5-88EE-466E-A7DA-9576C9DD70E4}|AllTechnologyWpf\\AllTechnologyWpf.csproj|C:\\Users\\Stipo6\\source\\repos\\AllTechnologyWpf\\alltechnologywpf\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{E7F16AE5-88EE-466E-A7DA-9576C9DD70E4}|AllTechnologyWpf\\AllTechnologyWpf.csproj|solutionrelative:alltechnologywpf\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E7F16AE5-88EE-466E-A7DA-9576C9DD70E4}|AllTechnologyWpf\\AllTechnologyWpf.csproj|c:\\users\\stipo6\\source\\repos\\alltechnologywpf\\alltechnologywpf\\controls\\usercalendar.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{E7F16AE5-88EE-466E-A7DA-9576C9DD70E4}|AllTechnologyWpf\\AllTechnologyWpf.csproj|solutionrelative:alltechnologywpf\\controls\\usercalendar.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E7F16AE5-88EE-466E-A7DA-9576C9DD70E4}|AllTechnologyWpf\\AllTechnologyWpf.csproj|C:\\Users\\Stipo6\\source\\repos\\AllTechnologyWpf\\alltechnologywpf\\controls\\usercalendar.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E7F16AE5-88EE-466E-A7DA-9576C9DD70E4}|AllTechnologyWpf\\AllTechnologyWpf.csproj|solutionrelative:alltechnologywpf\\controls\\usercalendar.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E7F16AE5-88EE-466E-A7DA-9576C9DD70E4}|AllTechnologyWpf\\AllTechnologyWpf.csproj|C:\\Users\\Stipo6\\source\\repos\\AllTechnologyWpf\\alltechnologywpf\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E7F16AE5-88EE-466E-A7DA-9576C9DD70E4}|AllTechnologyWpf\\AllTechnologyWpf.csproj|solutionrelative:alltechnologywpf\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E7F16AE5-88EE-466E-A7DA-9576C9DD70E4}|AllTechnologyWpf\\AllTechnologyWpf.csproj|c:\\users\\stipo6\\source\\repos\\alltechnologywpf\\alltechnologywpf\\pages\\pagenew.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E7F16AE5-88EE-466E-A7DA-9576C9DD70E4}|AllTechnologyWpf\\AllTechnologyWpf.csproj|solutionrelative:alltechnologywpf\\pages\\pagenew.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E7F16AE5-88EE-466E-A7DA-9576C9DD70E4}|AllTechnologyWpf\\AllTechnologyWpf.csproj|C:\\Users\\Stipo6\\source\\repos\\AllTechnologyWpf\\alltechnologywpf\\pages\\pagemain.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E7F16AE5-88EE-466E-A7DA-9576C9DD70E4}|AllTechnologyWpf\\AllTechnologyWpf.csproj|solutionrelative:alltechnologywpf\\pages\\pagemain.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E7F16AE5-88EE-466E-A7DA-9576C9DD70E4}|AllTechnologyWpf\\AllTechnologyWpf.csproj|c:\\users\\stipo6\\source\\repos\\alltechnologywpf\\alltechnologywpf\\pages\\pagecalendar.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{E7F16AE5-88EE-466E-A7DA-9576C9DD70E4}|AllTechnologyWpf\\AllTechnologyWpf.csproj|solutionrelative:alltechnologywpf\\pages\\pagecalendar.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E7F16AE5-88EE-466E-A7DA-9576C9DD70E4}|AllTechnologyWpf\\AllTechnologyWpf.csproj|C:\\Users\\Stipo6\\source\\repos\\AllTechnologyWpf\\alltechnologywpf\\windows\\oknosend.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{E7F16AE5-88EE-466E-A7DA-9576C9DD70E4}|AllTechnologyWpf\\AllTechnologyWpf.csproj|solutionrelative:alltechnologywpf\\windows\\oknosend.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E7F16AE5-88EE-466E-A7DA-9576C9DD70E4}|AllTechnologyWpf\\AllTechnologyWpf.csproj|C:\\Users\\Stipo6\\source\\repos\\AllTechnologyWpf\\alltechnologywpf\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
@@ -54,36 +122,8 @@
       "RelativeMoniker": "D:0:0:{E7F16AE5-88EE-466E-A7DA-9576C9DD70E4}|AllTechnologyWpf\\AllTechnologyWpf.csproj|solutionrelative:alltechnologywpf\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E7F16AE5-88EE-466E-A7DA-9576C9DD70E4}|AllTechnologyWpf\\AllTechnologyWpf.csproj|C:\\Users\\Stipo6\\source\\repos\\AllTechnologyWpf\\alltechnologywpf\\windows\\oknosend.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E7F16AE5-88EE-466E-A7DA-9576C9DD70E4}|AllTechnologyWpf\\AllTechnologyWpf.csproj|solutionrelative:alltechnologywpf\\windows\\oknosend.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{E7F16AE5-88EE-466E-A7DA-9576C9DD70E4}|AllTechnologyWpf\\AllTechnologyWpf.csproj|C:\\Users\\Stipo6\\source\\repos\\AllTechnologyWpf\\alltechnologywpf\\models\\partials\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E7F16AE5-88EE-466E-A7DA-9576C9DD70E4}|AllTechnologyWpf\\AllTechnologyWpf.csproj|solutionrelative:alltechnologywpf\\models\\partials\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E7F16AE5-88EE-466E-A7DA-9576C9DD70E4}|AllTechnologyWpf\\AllTechnologyWpf.csproj|C:\\Users\\Stipo6\\source\\repos\\AllTechnologyWpf\\alltechnologywpf\\windows\\oknocolors.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E7F16AE5-88EE-466E-A7DA-9576C9DD70E4}|AllTechnologyWpf\\AllTechnologyWpf.csproj|solutionrelative:alltechnologywpf\\windows\\oknocolors.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E7F16AE5-88EE-466E-A7DA-9576C9DD70E4}|AllTechnologyWpf\\AllTechnologyWpf.csproj|C:\\Users\\Stipo6\\source\\repos\\AllTechnologyWpf\\alltechnologywpf\\windows\\oknocolors.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{E7F16AE5-88EE-466E-A7DA-9576C9DD70E4}|AllTechnologyWpf\\AllTechnologyWpf.csproj|solutionrelative:alltechnologywpf\\windows\\oknocolors.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E7F16AE5-88EE-466E-A7DA-9576C9DD70E4}|AllTechnologyWpf\\AllTechnologyWpf.csproj|C:\\Users\\Stipo6\\source\\repos\\AllTechnologyWpf\\alltechnologywpf\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{E7F16AE5-88EE-466E-A7DA-9576C9DD70E4}|AllTechnologyWpf\\AllTechnologyWpf.csproj|solutionrelative:alltechnologywpf\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E7F16AE5-88EE-466E-A7DA-9576C9DD70E4}|AllTechnologyWpf\\AllTechnologyWpf.csproj|C:\\Users\\Stipo6\\source\\repos\\AllTechnologyWpf\\alltechnologywpf\\pages\\pagegrafik.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E7F16AE5-88EE-466E-A7DA-9576C9DD70E4}|AllTechnologyWpf\\AllTechnologyWpf.csproj|solutionrelative:alltechnologywpf\\pages\\pagegrafik.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E7F16AE5-88EE-466E-A7DA-9576C9DD70E4}|AllTechnologyWpf\\AllTechnologyWpf.csproj|C:\\Users\\Stipo6\\source\\repos\\AllTechnologyWpf\\alltechnologywpf\\pages\\pagegrafik.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{E7F16AE5-88EE-466E-A7DA-9576C9DD70E4}|AllTechnologyWpf\\AllTechnologyWpf.csproj|solutionrelative:alltechnologywpf\\pages\\pagegrafik.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E7F16AE5-88EE-466E-A7DA-9576C9DD70E4}|AllTechnologyWpf\\AllTechnologyWpf.csproj|C:\\Users\\Stipo6\\source\\repos\\AllTechnologyWpf\\alltechnologywpf\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{E7F16AE5-88EE-466E-A7DA-9576C9DD70E4}|AllTechnologyWpf\\AllTechnologyWpf.csproj|solutionrelative:alltechnologywpf\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E7F16AE5-88EE-466E-A7DA-9576C9DD70E4}|AllTechnologyWpf\\AllTechnologyWpf.csproj|C:\\Users\\Stipo6\\source\\repos\\AllTechnologyWpf\\alltechnologywpf\\properties\\settings.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -104,9 +144,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{E7F16AE5-88EE-466E-A7DA-9576C9DD70E4}|AllTechnologyWpf\\AllTechnologyWpf.csproj|C:\\Users\\Stipo6\\source\\repos\\AllTechnologyWpf\\alltechnologywpf\\packages.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
       "RelativeMoniker": "D:0:0:{E7F16AE5-88EE-466E-A7DA-9576C9DD70E4}|AllTechnologyWpf\\AllTechnologyWpf.csproj|solutionrelative:alltechnologywpf\\packages.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E7F16AE5-88EE-466E-A7DA-9576C9DD70E4}|AllTechnologyWpf\\AllTechnologyWpf.csproj|c:\\users\\stipo6\\source\\repos\\alltechnologywpf\\alltechnologywpf\\||{B270807C-D8C6-49EB-8EBE-8E8D566637A1}|5e9a8ac2-4f34-4521-858f-4c248ba31532"
     }
   ],
   "DocumentGroupContainers": [
@@ -116,108 +153,60 @@
       "DocumentGroups": [
         {
           "DockedHeight": 405,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 9,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Controls\\UserCalendar.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\Stipo6\\source\\repos\\AllTechnologyWpf\\AllTechnologyWpf\\Controls\\UserCalendar.xaml.cs",
-              "RelativeDocumentMoniker": "AllTechnologyWpf\\Controls\\UserCalendar.xaml.cs",
-              "ToolTip": "C:\\Users\\Stipo6\\source\\repos\\AllTechnologyWpf\\AllTechnologyWpf\\Controls\\UserCalendar.xaml.cs",
-              "RelativeToolTip": "AllTechnologyWpf\\Controls\\UserCalendar.xaml.cs",
-              "ViewState": "AQIAAAoAAAAAAAAAAAAmwCAAAAAmAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-17T10:44:19.861Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "UserCalendar.xaml",
-              "DocumentMoniker": "C:\\Users\\Stipo6\\source\\repos\\AllTechnologyWpf\\AllTechnologyWpf\\Controls\\UserCalendar.xaml",
-              "RelativeDocumentMoniker": "AllTechnologyWpf\\Controls\\UserCalendar.xaml",
-              "ToolTip": "C:\\Users\\Stipo6\\source\\repos\\AllTechnologyWpf\\AllTechnologyWpf\\Controls\\UserCalendar.xaml",
-              "RelativeToolTip": "AllTechnologyWpf\\Controls\\UserCalendar.xaml",
+              "DocumentIndex": 2,
+              "Title": "PageNewTwo.xaml",
+              "DocumentMoniker": "C:\\Users\\Stipo6\\source\\repos\\AllTechnologyWpf\\AllTechnologyWpf\\Pages\\PageNewTwo.xaml",
+              "RelativeDocumentMoniker": "AllTechnologyWpf\\Pages\\PageNewTwo.xaml",
+              "ToolTip": "C:\\Users\\Stipo6\\source\\repos\\AllTechnologyWpf\\AllTechnologyWpf\\Pages\\PageNewTwo.xaml",
+              "RelativeToolTip": "AllTechnologyWpf\\Pages\\PageNewTwo.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-06-17T10:43:31.134Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "PageCalendar.xaml",
-              "DocumentMoniker": "C:\\Users\\Stipo6\\source\\repos\\AllTechnologyWpf\\AllTechnologyWpf\\Pages\\PageCalendar.xaml",
-              "RelativeDocumentMoniker": "AllTechnologyWpf\\Pages\\PageCalendar.xaml",
-              "ToolTip": "C:\\Users\\Stipo6\\source\\repos\\AllTechnologyWpf\\AllTechnologyWpf\\Pages\\PageCalendar.xaml",
-              "RelativeToolTip": "AllTechnologyWpf\\Pages\\PageCalendar.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-06-17T10:43:15.496Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "App.xaml",
-              "DocumentMoniker": "C:\\Users\\Stipo6\\source\\repos\\AllTechnologyWpf\\AllTechnologyWpf\\App.xaml",
-              "RelativeDocumentMoniker": "AllTechnologyWpf\\App.xaml",
-              "ToolTip": "C:\\Users\\Stipo6\\source\\repos\\AllTechnologyWpf\\AllTechnologyWpf\\App.xaml",
-              "RelativeToolTip": "AllTechnologyWpf\\App.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-05-06T09:55:39.273Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "OknoColors.xaml",
-              "DocumentMoniker": "C:\\Users\\Stipo6\\source\\repos\\AllTechnologyWpf\\AllTechnologyWpf\\Windows\\OknoColors.xaml",
-              "RelativeDocumentMoniker": "AllTechnologyWpf\\Windows\\OknoColors.xaml",
-              "ToolTip": "C:\\Users\\Stipo6\\source\\repos\\AllTechnologyWpf\\AllTechnologyWpf\\Windows\\OknoColors.xaml",
-              "RelativeToolTip": "AllTechnologyWpf\\Windows\\OknoColors.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-05-18T21:00:32.916Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "OknoSend.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\Stipo6\\source\\repos\\AllTechnologyWpf\\AllTechnologyWpf\\Windows\\OknoSend.xaml.cs",
-              "RelativeDocumentMoniker": "AllTechnologyWpf\\Windows\\OknoSend.xaml.cs",
-              "ToolTip": "C:\\Users\\Stipo6\\source\\repos\\AllTechnologyWpf\\AllTechnologyWpf\\Windows\\OknoSend.xaml.cs",
-              "RelativeToolTip": "AllTechnologyWpf\\Windows\\OknoSend.xaml.cs",
-              "ViewState": "AQIAAEUAAAAAAAAAAAAAAFUAAAANAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-26T12:32:18.334Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "OknoSend.xaml",
-              "DocumentMoniker": "C:\\Users\\Stipo6\\source\\repos\\AllTechnologyWpf\\AllTechnologyWpf\\Windows\\OknoSend.xaml",
-              "RelativeDocumentMoniker": "AllTechnologyWpf\\Windows\\OknoSend.xaml",
-              "ToolTip": "C:\\Users\\Stipo6\\source\\repos\\AllTechnologyWpf\\AllTechnologyWpf\\Windows\\OknoSend.xaml",
-              "RelativeToolTip": "AllTechnologyWpf\\Windows\\OknoSend.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-05-26T12:30:20.73Z",
+              "WhenOpened": "2024-07-01T12:26:38.041Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "PageNew.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\Stipo6\\source\\repos\\AllTechnologyWpf\\AllTechnologyWpf\\Pages\\PageNew.xaml.cs",
-              "RelativeDocumentMoniker": "AllTechnologyWpf\\Pages\\PageNew.xaml.cs",
-              "ToolTip": "C:\\Users\\Stipo6\\source\\repos\\AllTechnologyWpf\\AllTechnologyWpf\\Pages\\PageNew.xaml.cs",
-              "RelativeToolTip": "AllTechnologyWpf\\Pages\\PageNew.xaml.cs",
-              "ViewState": "AQIAAOIAAAAAAAAAAAAAAPIAAAA7AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-06T10:08:16.92Z",
+              "Title": "PageMain.xaml",
+              "DocumentMoniker": "C:\\Users\\Stipo6\\source\\repos\\AllTechnologyWpf\\AllTechnologyWpf\\Pages\\PageMain.xaml",
+              "RelativeDocumentMoniker": "AllTechnologyWpf\\Pages\\PageMain.xaml",
+              "ToolTip": "C:\\Users\\Stipo6\\source\\repos\\AllTechnologyWpf\\AllTechnologyWpf\\Pages\\PageMain.xaml",
+              "RelativeToolTip": "AllTechnologyWpf\\Pages\\PageMain.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-05-06T10:00:22.987Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "PageGrafik.xaml",
+              "DocumentMoniker": "C:\\Users\\Stipo6\\source\\repos\\AllTechnologyWpf\\AllTechnologyWpf\\Pages\\PageGrafik.xaml",
+              "RelativeDocumentMoniker": "AllTechnologyWpf\\Pages\\PageGrafik.xaml",
+              "ToolTip": "C:\\Users\\Stipo6\\source\\repos\\AllTechnologyWpf\\AllTechnologyWpf\\Pages\\PageGrafik.xaml",
+              "RelativeToolTip": "AllTechnologyWpf\\Pages\\PageGrafik.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-05-16T16:28:48.004Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "PageGrafik.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Stipo6\\source\\repos\\AllTechnologyWpf\\AllTechnologyWpf\\Pages\\PageGrafik.xaml.cs",
+              "RelativeDocumentMoniker": "AllTechnologyWpf\\Pages\\PageGrafik.xaml.cs",
+              "ToolTip": "C:\\Users\\Stipo6\\source\\repos\\AllTechnologyWpf\\AllTechnologyWpf\\Pages\\PageGrafik.xaml.cs",
+              "RelativeToolTip": "AllTechnologyWpf\\Pages\\PageGrafik.xaml.cs",
+              "ViewState": "AQIAAEwAAAAAAAAAAAAwwGMAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-16T16:26:00.291Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "PageNew.xaml",
               "DocumentMoniker": "C:\\Users\\Stipo6\\source\\repos\\AllTechnologyWpf\\AllTechnologyWpf\\Pages\\PageNew.xaml",
               "RelativeDocumentMoniker": "AllTechnologyWpf\\Pages\\PageNew.xaml",
@@ -225,6 +214,70 @@
               "RelativeToolTip": "AllTechnologyWpf\\Pages\\PageNew.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2024-05-06T10:08:15.111Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "OknoSend.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Stipo6\\source\\repos\\AllTechnologyWpf\\AllTechnologyWpf\\Windows\\OknoSend.xaml.cs",
+              "RelativeDocumentMoniker": "AllTechnologyWpf\\Windows\\OknoSend.xaml.cs",
+              "ToolTip": "C:\\Users\\Stipo6\\source\\repos\\AllTechnologyWpf\\AllTechnologyWpf\\Windows\\OknoSend.xaml.cs",
+              "RelativeToolTip": "AllTechnologyWpf\\Windows\\OknoSend.xaml.cs",
+              "ViewState": "AQIAAEUAAAAAAAAAAAAAAFUAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-26T12:32:18.334Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "OknoTabChart.xaml",
+              "DocumentMoniker": "C:\\Users\\Stipo6\\source\\repos\\AllTechnologyWpf\\AllTechnologyWpf\\Windows\\OknoTabChart.xaml",
+              "RelativeDocumentMoniker": "AllTechnologyWpf\\Windows\\OknoTabChart.xaml",
+              "ToolTip": "C:\\Users\\Stipo6\\source\\repos\\AllTechnologyWpf\\AllTechnologyWpf\\Windows\\OknoTabChart.xaml",
+              "RelativeToolTip": "AllTechnologyWpf\\Windows\\OknoTabChart.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-07-01T11:26:04.017Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "OknoTabChart.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Stipo6\\source\\repos\\AllTechnologyWpf\\AllTechnologyWpf\\Windows\\OknoTabChart.xaml.cs",
+              "RelativeDocumentMoniker": "AllTechnologyWpf\\Windows\\OknoTabChart.xaml.cs",
+              "ToolTip": "C:\\Users\\Stipo6\\source\\repos\\AllTechnologyWpf\\AllTechnologyWpf\\Windows\\OknoTabChart.xaml.cs",
+              "RelativeToolTip": "AllTechnologyWpf\\Windows\\OknoTabChart.xaml.cs",
+              "ViewState": "AQIAABIAAAAAAAAAAAAuwCwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-01T11:26:31.084Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "PageNew.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Stipo6\\source\\repos\\AllTechnologyWpf\\AllTechnologyWpf\\Pages\\PageNew.xaml.cs",
+              "RelativeDocumentMoniker": "AllTechnologyWpf\\Pages\\PageNew.xaml.cs",
+              "ToolTip": "C:\\Users\\Stipo6\\source\\repos\\AllTechnologyWpf\\AllTechnologyWpf\\Pages\\PageNew.xaml.cs",
+              "RelativeToolTip": "AllTechnologyWpf\\Pages\\PageNew.xaml.cs",
+              "ViewState": "AQIAAMkAAAAAAAAAAAAiwO8AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-06T10:08:16.92Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "PageNewTwo.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Stipo6\\source\\repos\\AllTechnologyWpf\\AllTechnologyWpf\\Pages\\PageNewTwo.xaml.cs",
+              "RelativeDocumentMoniker": "AllTechnologyWpf\\Pages\\PageNewTwo.xaml.cs",
+              "ToolTip": "C:\\Users\\Stipo6\\source\\repos\\AllTechnologyWpf\\AllTechnologyWpf\\Pages\\PageNewTwo.xaml.cs",
+              "RelativeToolTip": "AllTechnologyWpf\\Pages\\PageNewTwo.xaml.cs",
+              "ViewState": "AQIAAEQAAAAAAAAAAAAEwFwAAAAwAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-01T12:28:01.05Z",
               "EditorCaption": ""
             },
             {
@@ -242,57 +295,130 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "PageMain.xaml",
-              "DocumentMoniker": "C:\\Users\\Stipo6\\source\\repos\\AllTechnologyWpf\\AllTechnologyWpf\\Pages\\PageMain.xaml",
-              "RelativeDocumentMoniker": "AllTechnologyWpf\\Pages\\PageMain.xaml",
-              "ToolTip": "C:\\Users\\Stipo6\\source\\repos\\AllTechnologyWpf\\AllTechnologyWpf\\Pages\\PageMain.xaml",
-              "RelativeToolTip": "AllTechnologyWpf\\Pages\\PageMain.xaml",
+              "DocumentIndex": 13,
+              "Title": "OknoSend.xaml",
+              "DocumentMoniker": "C:\\Users\\Stipo6\\source\\repos\\AllTechnologyWpf\\AllTechnologyWpf\\Windows\\OknoSend.xaml",
+              "RelativeDocumentMoniker": "AllTechnologyWpf\\Windows\\OknoSend.xaml",
+              "ToolTip": "C:\\Users\\Stipo6\\source\\repos\\AllTechnologyWpf\\AllTechnologyWpf\\Windows\\OknoSend.xaml",
+              "RelativeToolTip": "AllTechnologyWpf\\Windows\\OknoSend.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-05-06T10:00:22.987Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "App.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\Stipo6\\source\\repos\\AllTechnologyWpf\\AllTechnologyWpf\\App.xaml.cs",
-              "RelativeDocumentMoniker": "AllTechnologyWpf\\App.xaml.cs",
-              "ToolTip": "C:\\Users\\Stipo6\\source\\repos\\AllTechnologyWpf\\AllTechnologyWpf\\App.xaml.cs",
-              "RelativeToolTip": "AllTechnologyWpf\\App.xaml.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAABoAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-06T10:00:35.033Z",
+              "WhenOpened": "2024-05-26T12:30:20.73Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 9,
-              "Title": "App.config",
-              "DocumentMoniker": "C:\\Users\\Stipo6\\source\\repos\\AllTechnologyWpf\\AllTechnologyWpf\\App.config",
-              "RelativeDocumentMoniker": "AllTechnologyWpf\\App.config",
-              "ToolTip": "C:\\Users\\Stipo6\\source\\repos\\AllTechnologyWpf\\AllTechnologyWpf\\App.config",
-              "RelativeToolTip": "AllTechnologyWpf\\App.config",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAASAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
-              "WhenOpened": "2024-05-26T12:26:33.068Z",
+              "Title": "OknoPieChart.xaml",
+              "DocumentMoniker": "C:\\Users\\Stipo6\\source\\repos\\AllTechnologyWpf\\AllTechnologyWpf\\Windows\\OknoPieChart.xaml",
+              "RelativeDocumentMoniker": "AllTechnologyWpf\\Windows\\OknoPieChart.xaml",
+              "ToolTip": "C:\\Users\\Stipo6\\source\\repos\\AllTechnologyWpf\\AllTechnologyWpf\\Windows\\OknoPieChart.xaml",
+              "RelativeToolTip": "AllTechnologyWpf\\Windows\\OknoPieChart.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-07-01T11:24:36.032Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "AllTechnologyWpf",
-              "DocumentMoniker": "C:\\Users\\Stipo6\\source\\repos\\AllTechnologyWpf\\AllTechnologyWpf\\AllTechnologyWpf.csproj",
-              "RelativeDocumentMoniker": "AllTechnologyWpf\\AllTechnologyWpf.csproj",
-              "ToolTip": "C:\\Users\\Stipo6\\source\\repos\\AllTechnologyWpf\\AllTechnologyWpf\\AllTechnologyWpf.csproj",
-              "RelativeToolTip": "AllTechnologyWpf\\AllTechnologyWpf.csproj",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2024-05-06T10:16:17.227Z",
+              "DocumentIndex": 8,
+              "Title": "App.xaml",
+              "DocumentMoniker": "C:\\Users\\Stipo6\\source\\repos\\AllTechnologyWpf\\AllTechnologyWpf\\App.xaml",
+              "RelativeDocumentMoniker": "AllTechnologyWpf\\App.xaml",
+              "ToolTip": "C:\\Users\\Stipo6\\source\\repos\\AllTechnologyWpf\\AllTechnologyWpf\\App.xaml",
+              "RelativeToolTip": "AllTechnologyWpf\\App.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-05-06T09:55:39.273Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "PageCalendar.xaml",
+              "DocumentMoniker": "C:\\Users\\Stipo6\\source\\repos\\AllTechnologyWpf\\AllTechnologyWpf\\Pages\\PageCalendar.xaml",
+              "RelativeDocumentMoniker": "AllTechnologyWpf\\Pages\\PageCalendar.xaml",
+              "ToolTip": "C:\\Users\\Stipo6\\source\\repos\\AllTechnologyWpf\\AllTechnologyWpf\\Pages\\PageCalendar.xaml",
+              "RelativeToolTip": "AllTechnologyWpf\\Pages\\PageCalendar.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-06-17T10:43:15.496Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 15,
+              "Title": "OknoLiveCharts.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Stipo6\\source\\repos\\AllTechnologyWpf\\AllTechnologyWpf\\Windows\\OknoLiveCharts.xaml.cs",
+              "RelativeDocumentMoniker": "AllTechnologyWpf\\Windows\\OknoLiveCharts.xaml.cs",
+              "ToolTip": "C:\\Users\\Stipo6\\source\\repos\\AllTechnologyWpf\\AllTechnologyWpf\\Windows\\OknoLiveCharts.xaml.cs",
+              "RelativeToolTip": "AllTechnologyWpf\\Windows\\OknoLiveCharts.xaml.cs",
+              "ViewState": "AQIAAAoAAAAAAAAAAAAmwC4AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-01T11:01:08.649Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "OknoLiveCharts.xaml",
+              "DocumentMoniker": "C:\\Users\\Stipo6\\source\\repos\\AllTechnologyWpf\\AllTechnologyWpf\\Windows\\OknoLiveCharts.xaml",
+              "RelativeDocumentMoniker": "AllTechnologyWpf\\Windows\\OknoLiveCharts.xaml",
+              "ToolTip": "C:\\Users\\Stipo6\\source\\repos\\AllTechnologyWpf\\AllTechnologyWpf\\Windows\\OknoLiveCharts.xaml",
+              "RelativeToolTip": "AllTechnologyWpf\\Windows\\OknoLiveCharts.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-07-01T10:59:22.39Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "OknoAnglChart.xaml",
+              "DocumentMoniker": "C:\\Users\\Stipo6\\source\\repos\\AllTechnologyWpf\\AllTechnologyWpf\\Windows\\OknoAnglChart.xaml",
+              "RelativeDocumentMoniker": "AllTechnologyWpf\\Windows\\OknoAnglChart.xaml",
+              "ToolTip": "C:\\Users\\Stipo6\\source\\repos\\AllTechnologyWpf\\AllTechnologyWpf\\Windows\\OknoAnglChart.xaml",
+              "RelativeToolTip": "AllTechnologyWpf\\Windows\\OknoAnglChart.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-07-01T11:24:55.704Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "OknoAnglChart.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Stipo6\\source\\repos\\AllTechnologyWpf\\AllTechnologyWpf\\Windows\\OknoAnglChart.xaml.cs",
+              "RelativeDocumentMoniker": "AllTechnologyWpf\\Windows\\OknoAnglChart.xaml.cs",
+              "ToolTip": "C:\\Users\\Stipo6\\source\\repos\\AllTechnologyWpf\\AllTechnologyWpf\\Windows\\OknoAnglChart.xaml.cs",
+              "RelativeToolTip": "AllTechnologyWpf\\Windows\\OknoAnglChart.xaml.cs",
+              "ViewState": "AQIAAAoAAAAAAAAAAAAuwCAAAAAvAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-01T11:26:12.581Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "OknoPieChart.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Stipo6\\source\\repos\\AllTechnologyWpf\\AllTechnologyWpf\\Windows\\OknoPieChart.xaml.cs",
+              "RelativeDocumentMoniker": "AllTechnologyWpf\\Windows\\OknoPieChart.xaml.cs",
+              "ToolTip": "C:\\Users\\Stipo6\\source\\repos\\AllTechnologyWpf\\AllTechnologyWpf\\Windows\\OknoPieChart.xaml.cs",
+              "RelativeToolTip": "AllTechnologyWpf\\Windows\\OknoPieChart.xaml.cs",
+              "ViewState": "AQIAAA0AAAAAAAAAAAAuwCYAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-01T11:26:24.93Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\Stipo6\\source\\repos\\AllTechnologyWpf\\AllTechnologyWpf\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "AllTechnologyWpf\\MainWindow.xaml",
+              "ToolTip": "C:\\Users\\Stipo6\\source\\repos\\AllTechnologyWpf\\AllTechnologyWpf\\MainWindow.xaml",
+              "RelativeToolTip": "AllTechnologyWpf\\MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-05-06T10:00:26.596Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
               "Title": "OknoColors.xaml.cs",
               "DocumentMoniker": "C:\\Users\\Stipo6\\source\\repos\\AllTechnologyWpf\\AllTechnologyWpf\\Windows\\OknoColors.xaml.cs",
               "RelativeDocumentMoniker": "AllTechnologyWpf\\Windows\\OknoColors.xaml.cs",
@@ -300,11 +426,47 @@
               "RelativeToolTip": "AllTechnologyWpf\\Windows\\OknoColors.xaml.cs",
               "ViewState": "AQIAAAkAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-18T21:01:15.661Z"
+              "WhenOpened": "2024-05-18T21:01:15.661Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 21,
+              "Title": "OknoColors.xaml",
+              "DocumentMoniker": "C:\\Users\\Stipo6\\source\\repos\\AllTechnologyWpf\\AllTechnologyWpf\\Windows\\OknoColors.xaml",
+              "RelativeDocumentMoniker": "AllTechnologyWpf\\Windows\\OknoColors.xaml",
+              "ToolTip": "C:\\Users\\Stipo6\\source\\repos\\AllTechnologyWpf\\AllTechnologyWpf\\Windows\\OknoColors.xaml",
+              "RelativeToolTip": "AllTechnologyWpf\\Windows\\OknoColors.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-05-18T21:00:32.916Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "UserCalendar.xaml",
+              "DocumentMoniker": "C:\\Users\\Stipo6\\source\\repos\\AllTechnologyWpf\\AllTechnologyWpf\\Controls\\UserCalendar.xaml",
+              "RelativeDocumentMoniker": "AllTechnologyWpf\\Controls\\UserCalendar.xaml",
+              "ToolTip": "C:\\Users\\Stipo6\\source\\repos\\AllTechnologyWpf\\AllTechnologyWpf\\Controls\\UserCalendar.xaml",
+              "RelativeToolTip": "AllTechnologyWpf\\Controls\\UserCalendar.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-06-17T10:43:31.134Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "AllTechnologyWpf",
+              "DocumentMoniker": "C:\\Users\\Stipo6\\source\\repos\\AllTechnologyWpf\\AllTechnologyWpf\\AllTechnologyWpf.csproj",
+              "RelativeDocumentMoniker": "AllTechnologyWpf\\AllTechnologyWpf.csproj",
+              "ToolTip": "C:\\Users\\Stipo6\\source\\repos\\AllTechnologyWpf\\AllTechnologyWpf\\AllTechnologyWpf.csproj",
+              "RelativeToolTip": "AllTechnologyWpf\\AllTechnologyWpf.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-05-06T10:16:17.227Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
               "Title": "User.cs",
               "DocumentMoniker": "C:\\Users\\Stipo6\\source\\repos\\AllTechnologyWpf\\AllTechnologyWpf\\Models\\User.cs",
               "RelativeDocumentMoniker": "AllTechnologyWpf\\Models\\User.cs",
@@ -316,7 +478,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 28,
               "Title": "XMLUser.cs",
               "DocumentMoniker": "C:\\Users\\Stipo6\\source\\repos\\AllTechnologyWpf\\AllTechnologyWpf\\Models\\SerialisibleModels\\XMLUser.cs",
               "RelativeDocumentMoniker": "AllTechnologyWpf\\Models\\SerialisibleModels\\XMLUser.cs",
@@ -328,7 +490,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 30,
               "Title": "User.cs",
               "DocumentMoniker": "C:\\Users\\Stipo6\\source\\repos\\AllTechnologyWpf\\AllTechnologyWpf\\Models\\Partials\\User.cs",
               "RelativeDocumentMoniker": "AllTechnologyWpf\\Models\\Partials\\User.cs",
@@ -340,41 +502,43 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "PageGrafik.xaml",
-              "DocumentMoniker": "C:\\Users\\Stipo6\\source\\repos\\AllTechnologyWpf\\AllTechnologyWpf\\Pages\\PageGrafik.xaml",
-              "RelativeDocumentMoniker": "AllTechnologyWpf\\Pages\\PageGrafik.xaml",
-              "ToolTip": "C:\\Users\\Stipo6\\source\\repos\\AllTechnologyWpf\\AllTechnologyWpf\\Pages\\PageGrafik.xaml",
-              "RelativeToolTip": "AllTechnologyWpf\\Pages\\PageGrafik.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-05-16T16:28:48.004Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "MainWindow.xaml",
-              "DocumentMoniker": "C:\\Users\\Stipo6\\source\\repos\\AllTechnologyWpf\\AllTechnologyWpf\\MainWindow.xaml",
-              "RelativeDocumentMoniker": "AllTechnologyWpf\\MainWindow.xaml",
-              "ToolTip": "C:\\Users\\Stipo6\\source\\repos\\AllTechnologyWpf\\AllTechnologyWpf\\MainWindow.xaml",
-              "RelativeToolTip": "AllTechnologyWpf\\MainWindow.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-05-06T10:00:26.596Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "PageGrafik.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\Stipo6\\source\\repos\\AllTechnologyWpf\\AllTechnologyWpf\\Pages\\PageGrafik.xaml.cs",
-              "RelativeDocumentMoniker": "AllTechnologyWpf\\Pages\\PageGrafik.xaml.cs",
-              "ToolTip": "C:\\Users\\Stipo6\\source\\repos\\AllTechnologyWpf\\AllTechnologyWpf\\Pages\\PageGrafik.xaml.cs",
-              "RelativeToolTip": "AllTechnologyWpf\\Pages\\PageGrafik.xaml.cs",
-              "ViewState": "AQIAABUAAAAAAAAAAAAjwFsAAAAAAAAA",
+              "DocumentIndex": 24,
+              "Title": "Controls\\UserCalendar.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Stipo6\\source\\repos\\AllTechnologyWpf\\AllTechnologyWpf\\Controls\\UserCalendar.xaml.cs",
+              "RelativeDocumentMoniker": "AllTechnologyWpf\\Controls\\UserCalendar.xaml.cs",
+              "ToolTip": "C:\\Users\\Stipo6\\source\\repos\\AllTechnologyWpf\\AllTechnologyWpf\\Controls\\UserCalendar.xaml.cs",
+              "RelativeToolTip": "AllTechnologyWpf\\Controls\\UserCalendar.xaml.cs",
+              "ViewState": "AQIAAAoAAAAAAAAAAAAmwCAAAAAmAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-16T16:26:00.291Z"
+              "WhenOpened": "2024-06-17T10:44:19.861Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 25,
+              "Title": "App.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Stipo6\\source\\repos\\AllTechnologyWpf\\AllTechnologyWpf\\App.xaml.cs",
+              "RelativeDocumentMoniker": "AllTechnologyWpf\\App.xaml.cs",
+              "ToolTip": "C:\\Users\\Stipo6\\source\\repos\\AllTechnologyWpf\\AllTechnologyWpf\\App.xaml.cs",
+              "RelativeToolTip": "AllTechnologyWpf\\App.xaml.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAABoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-06T10:00:35.033Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "App.config",
+              "DocumentMoniker": "C:\\Users\\Stipo6\\source\\repos\\AllTechnologyWpf\\AllTechnologyWpf\\App.config",
+              "RelativeDocumentMoniker": "AllTechnologyWpf\\App.config",
+              "ToolTip": "C:\\Users\\Stipo6\\source\\repos\\AllTechnologyWpf\\AllTechnologyWpf\\App.config",
+              "RelativeToolTip": "AllTechnologyWpf\\App.config",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAASAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2024-05-26T12:26:33.068Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
               "Title": "Settings.Designer.cs",
               "DocumentMoniker": "C:\\Users\\Stipo6\\source\\repos\\AllTechnologyWpf\\AllTechnologyWpf\\Properties\\Settings.Designer.cs",
               "RelativeDocumentMoniker": "AllTechnologyWpf\\Properties\\Settings.Designer.cs",
@@ -386,19 +550,18 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 34,
               "Title": "Settings.settings",
               "DocumentMoniker": "C:\\Users\\Stipo6\\source\\repos\\AllTechnologyWpf\\AllTechnologyWpf\\Properties\\Settings.settings",
               "RelativeDocumentMoniker": "AllTechnologyWpf\\Properties\\Settings.settings",
               "ToolTip": "C:\\Users\\Stipo6\\source\\repos\\AllTechnologyWpf\\AllTechnologyWpf\\Properties\\Settings.settings",
               "RelativeToolTip": "AllTechnologyWpf\\Properties\\Settings.settings",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002767|",
-              "WhenOpened": "2024-05-06T10:00:51.041Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-06T10:00:51.041Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 32,
               "Title": "TechDatabase.edmx [Diagram1]",
               "DocumentMoniker": "C:\\Users\\Stipo6\\source\\repos\\AllTechnologyWpf\\AllTechnologyWpf\\Models\\TechDatabase.edmx",
               "RelativeDocumentMoniker": "AllTechnologyWpf\\Models\\TechDatabase.edmx",
@@ -409,7 +572,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 35,
               "Title": "packages.config",
               "DocumentMoniker": "C:\\Users\\Stipo6\\source\\repos\\AllTechnologyWpf\\AllTechnologyWpf\\packages.config",
               "RelativeDocumentMoniker": "AllTechnologyWpf\\packages.config",
@@ -421,7 +584,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 33,
               "Title": "AssemblyInfo.cs",
               "DocumentMoniker": "C:\\Users\\Stipo6\\source\\repos\\AllTechnologyWpf\\AllTechnologyWpf\\Properties\\AssemblyInfo.cs",
               "RelativeDocumentMoniker": "AllTechnologyWpf\\Properties\\AssemblyInfo.cs",
